@@ -16,7 +16,7 @@ namespace CsharpBook
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormFirstQuize());
+            Application.Run(new Form1());
         }
     }
 }
