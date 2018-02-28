@@ -83,9 +83,39 @@ namespace CsharpBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boardercolor {
+            get {
+                object obj = ResourceManager.GetObject("boardercolor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dvdvd {
+            get {
+                object obj = ResourceManager.GetObject("dvdvd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap first_page {
             get {
                 object obj = ResourceManager.GetObject("first_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newwwwww5 {
+            get {
+                object obj = ResourceManager.GetObject("newwwwww5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
