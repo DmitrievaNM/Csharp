@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CsharpBook
 {
-    public partial class contents : Form
+    public partial class Contents : Form
     {
-        public contents()
+        public Contents()
         {
             InitializeComponent();
         }

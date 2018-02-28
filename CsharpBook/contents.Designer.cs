@@ -1,6 +1,6 @@
 ﻿namespace CsharpBook
 {
-    partial class contents
+    partial class Contents
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // contents
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 261);
-            this.Name = "contents";
-            this.Text = "contents";
-            this.ResumeLayout(false);
-
+            this.Text = "Contents";
         }
 
         #endregion
