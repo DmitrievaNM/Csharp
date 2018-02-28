@@ -103,5 +103,11 @@
   <ItemGroup>
     <None Include="Resources\pic5.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ValidationExample.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ValidationExample.Designer.aspx" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
