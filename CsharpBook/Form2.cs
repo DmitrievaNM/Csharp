@@ -54,10 +54,19 @@ namespace CsharpBook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int user;
-            user =  created successfully;
-            
-            MessageBox.Show(user.ToString());
+
+
+
+        }   
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
