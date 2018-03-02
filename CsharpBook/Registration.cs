@@ -64,19 +64,15 @@ namespace CsharpBook
             cmd.Parameters.AddWithValue("@First Name", firstnametxtbx.Text);
             cmd.Parameters.AddWithValue("@Last Name", lastnametxtbx.Text);
             cmd.Parameters.AddWithValue("@Email Address", emailaddresstxtbx.Text);
-            cmd.Parameters.AddWithValue("@Gender", gen.Text);
-            cmd.Parameters.AddWithValue("@Country", addbox.Text);
-            cmd.Parameters.AddWithValue("@Contact Number", addbox.Text);
-            cmd.Parameters.AddWithValue("@Subscriptions", addbox.Text);
-            cmd.Parameters.AddWithValue("@Terms And Conditions", addbox.Text);
-     
-
+            cmd.Parameters.AddWithValue("@Country", countrytxtbx.Text);
+            cmd.Parameters.AddWithValue("@Contact Number", contactnumbertxtbx.Text);
+       
 
             conn.Open();
             if (cmd.ExecuteNonQuery() == 1)
             {
-                label9.ForeColor = System.Drawing.Color.Green;
-                label9.Text = "successfully added!";
+                label6.ForeColor = System.Drawing.Color.Red;
+                label6.Text = "successfully added!";
             }
             conn.Close();
         }
@@ -92,7 +88,8 @@ namespace CsharpBook
 
         private void label11_Click(object sender, EventArgs e)
         {
-
+            new QuizeForm1();
+            this.Hide();
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -134,6 +131,34 @@ namespace CsharpBook
         }
 
         private void firstnametxtbx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            new QuizeForm1();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
 
         }
