@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CsharpBook
 {
-    public partial class QuizeForm1 : Form
+    public partial class Form1 : Form
     {
-        public QuizeForm1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -22,18 +22,10 @@ namespace CsharpBook
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void contentslbl_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FirstQuestion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
+            new Contents().Show();
+            this.Hide();
 
         }
     }
