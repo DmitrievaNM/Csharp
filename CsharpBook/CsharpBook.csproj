@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizeForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizeForm1.Designer.cs">
+      <DependentUpon>QuizeForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="contents.resx">
       <DependentUpon>contents.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuizeForm1.resx">
+      <DependentUpon>QuizeForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
