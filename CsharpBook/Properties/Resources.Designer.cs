@@ -123,6 +123,16 @@ namespace CsharpBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap newwwwww5 {
             get {
                 object obj = ResourceManager.GetObject("newwwwww5", resourceCulture);
@@ -196,6 +206,16 @@ namespace CsharpBook.Properties {
         internal static System.Drawing.Bitmap Settings {
             get {
                 object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sfs {
+            get {
+                object obj = ResourceManager.GetObject("sfs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

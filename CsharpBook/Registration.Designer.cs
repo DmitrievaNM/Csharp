@@ -1,6 +1,6 @@
 ﻿namespace CsharpBook
 {
-    partial class Form2
+    partial class Registration
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,19 @@
             this.emailaddresslbl = new System.Windows.Forms.Label();
             this.genderlbl = new System.Windows.Forms.Label();
             this.countrylbl = new System.Windows.Forms.Label();
-            this.dateofbirthlbl = new System.Windows.Forms.Label();
             this.contactnumberlbl = new System.Windows.Forms.Label();
             this.registerbttn = new System.Windows.Forms.Button();
             this.updatebttn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.firstnametxtbx = new System.Windows.Forms.TextBox();
+            this.lastnametxtbx = new System.Windows.Forms.TextBox();
+            this.emailaddresstxtbx = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.countrytxtbx = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.contactnumbertxtbx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -58,17 +57,22 @@
             this.emailaddresstarlbl = new System.Windows.Forms.Label();
             this.contactnumberstarlbl = new System.Windows.Forms.Label();
             this.firstnamestarlbl = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Firstnamemb = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,19 +131,10 @@
             this.countrylbl.TabIndex = 6;
             this.countrylbl.Text = "Country:";
             // 
-            // dateofbirthlbl
-            // 
-            this.dateofbirthlbl.AutoSize = true;
-            this.dateofbirthlbl.Location = new System.Drawing.Point(64, 229);
-            this.dateofbirthlbl.Name = "dateofbirthlbl";
-            this.dateofbirthlbl.Size = new System.Drawing.Size(71, 13);
-            this.dateofbirthlbl.TabIndex = 7;
-            this.dateofbirthlbl.Text = "Date Of Birth:";
-            // 
             // contactnumberlbl
             // 
             this.contactnumberlbl.AutoSize = true;
-            this.contactnumberlbl.Location = new System.Drawing.Point(64, 264);
+            this.contactnumberlbl.Location = new System.Drawing.Point(66, 233);
             this.contactnumberlbl.Name = "contactnumberlbl";
             this.contactnumberlbl.Size = new System.Drawing.Size(87, 13);
             this.contactnumberlbl.TabIndex = 8;
@@ -147,7 +142,7 @@
             // 
             // registerbttn
             // 
-            this.registerbttn.Location = new System.Drawing.Point(107, 462);
+            this.registerbttn.Location = new System.Drawing.Point(121, 451);
             this.registerbttn.Name = "registerbttn";
             this.registerbttn.Size = new System.Drawing.Size(75, 23);
             this.registerbttn.TabIndex = 9;
@@ -157,7 +152,7 @@
             // 
             // updatebttn
             // 
-            this.updatebttn.Location = new System.Drawing.Point(289, 462);
+            this.updatebttn.Location = new System.Drawing.Point(279, 451);
             this.updatebttn.Name = "updatebttn";
             this.updatebttn.Size = new System.Drawing.Size(75, 23);
             this.updatebttn.TabIndex = 10;
@@ -176,41 +171,44 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(363, 532);
+            this.label10.Location = new System.Drawing.Point(309, 532);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 13;
             this.label10.Text = "Settings";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(205, 533);
+            this.label11.Location = new System.Drawing.Point(172, 532);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 13);
             this.label11.TabIndex = 14;
             this.label11.Text = "Quizzes";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // textBox1
+            // firstnametxtbx
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
+            this.firstnametxtbx.Location = new System.Drawing.Point(183, 57);
+            this.firstnametxtbx.Name = "firstnametxtbx";
+            this.firstnametxtbx.Size = new System.Drawing.Size(100, 20);
+            this.firstnametxtbx.TabIndex = 15;
+            this.firstnametxtbx.TextChanged += new System.EventHandler(this.firstnametxtbx_TextChanged);
             // 
-            // textBox2
+            // lastnametxtbx
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 16;
+            this.lastnametxtbx.Location = new System.Drawing.Point(183, 91);
+            this.lastnametxtbx.Name = "lastnametxtbx";
+            this.lastnametxtbx.Size = new System.Drawing.Size(100, 20);
+            this.lastnametxtbx.TabIndex = 16;
             // 
-            // textBox3
+            // emailaddresstxtbx
             // 
-            this.textBox3.Location = new System.Drawing.Point(183, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 17;
+            this.emailaddresstxtbx.Location = new System.Drawing.Point(183, 122);
+            this.emailaddresstxtbx.Name = "emailaddresstxtbx";
+            this.emailaddresstxtbx.Size = new System.Drawing.Size(100, 20);
+            this.emailaddresstxtbx.TabIndex = 17;
             // 
             // radioButton2
             // 
@@ -222,17 +220,17 @@
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // countrytxtbx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.countrytxtbx.FormattingEnabled = true;
+            this.countrytxtbx.Items.AddRange(new object[] {
             "Sri Lanka",
             "New Zealand",
             "Australia"});
-            this.comboBox1.Location = new System.Drawing.Point(183, 192);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 20;
+            this.countrytxtbx.Location = new System.Drawing.Point(183, 192);
+            this.countrytxtbx.Name = "countrytxtbx";
+            this.countrytxtbx.Size = new System.Drawing.Size(100, 21);
+            this.countrytxtbx.TabIndex = 20;
             // 
             // radioButton1
             // 
@@ -244,17 +242,17 @@
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // contactnumbertxtbx
             // 
-            this.textBox4.Location = new System.Drawing.Point(183, 257);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 22;
+            this.contactnumbertxtbx.Location = new System.Drawing.Point(183, 233);
+            this.contactnumbertxtbx.Name = "contactnumbertxtbx";
+            this.contactnumbertxtbx.Size = new System.Drawing.Size(100, 20);
+            this.contactnumbertxtbx.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 311);
+            this.label2.Location = new System.Drawing.Point(66, 283);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 23;
@@ -264,7 +262,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(66, 368);
+            this.label3.Location = new System.Drawing.Point(66, 355);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 13);
             this.label3.TabIndex = 26;
@@ -274,17 +272,18 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(183, 310);
+            this.checkBox1.Location = new System.Drawing.Point(183, 283);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(156, 17);
             this.checkBox1.TabIndex = 27;
             this.checkBox1.Text = "Subscribe to recieve Emails";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(183, 333);
+            this.checkBox2.Location = new System.Drawing.Point(183, 306);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(152, 17);
             this.checkBox2.TabIndex = 28;
@@ -295,18 +294,18 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(183, 411);
+            this.checkBox3.Location = new System.Drawing.Point(183, 384);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(209, 17);
+            this.checkBox3.Size = new System.Drawing.Size(47, 17);
             this.checkBox3.TabIndex = 29;
-            this.checkBox3.Text = "I Agree to Terms And Conditions";
+            this.checkBox3.Text = "Yes";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // termsstarlbl
             // 
             this.termsstarlbl.AutoSize = true;
             this.termsstarlbl.ForeColor = System.Drawing.Color.Red;
-            this.termsstarlbl.Location = new System.Drawing.Point(196, 368);
+            this.termsstarlbl.Location = new System.Drawing.Point(196, 352);
             this.termsstarlbl.Name = "termsstarlbl";
             this.termsstarlbl.Size = new System.Drawing.Size(11, 13);
             this.termsstarlbl.TabIndex = 30;
@@ -336,11 +335,12 @@
             // 
             this.contactnumberstarlbl.AutoSize = true;
             this.contactnumberstarlbl.ForeColor = System.Drawing.Color.Red;
-            this.contactnumberstarlbl.Location = new System.Drawing.Point(146, 260);
+            this.contactnumberstarlbl.Location = new System.Drawing.Point(148, 231);
             this.contactnumberstarlbl.Name = "contactnumberstarlbl";
             this.contactnumberstarlbl.Size = new System.Drawing.Size(11, 13);
             this.contactnumberstarlbl.TabIndex = 33;
             this.contactnumberstarlbl.Text = "*";
+            this.contactnumberstarlbl.Click += new System.EventHandler(this.contactnumberstarlbl_Click);
             // 
             // firstnamestarlbl
             // 
@@ -351,6 +351,47 @@
             this.firstnamestarlbl.Size = new System.Drawing.Size(11, 13);
             this.firstnamestarlbl.TabIndex = 34;
             this.firstnamestarlbl.Text = "*";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::CsharpBook.Properties.Resources.login;
+            this.pictureBox6.Location = new System.Drawing.Point(433, 501);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(33, 28);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 38;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::CsharpBook.Properties.Resources.Settings;
+            this.pictureBox5.Location = new System.Drawing.Point(315, 502);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(33, 28);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 37;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CsharpBook.Properties.Resources.quizz;
+            this.pictureBox4.Location = new System.Drawing.Point(175, 501);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 36;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CsharpBook.Properties.Resources._11539_200;
+            this.pictureBox3.Location = new System.Drawing.Point(39, 501);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(37, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -369,52 +410,59 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // label4
             // 
-            this.pictureBox3.Image = global::CsharpBook.Properties.Resources._11539_200;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 501);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 35;
-            this.pictureBox3.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(433, 531);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Login";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // pictureBox4
+            // linkLabel1
             // 
-            this.pictureBox4.Image = global::CsharpBook.Properties.Resources.quizz;
-            this.pictureBox4.Location = new System.Drawing.Point(208, 501);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 29);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 36;
-            this.pictureBox4.TabStop = false;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(419, 37);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(59, 13);
+            this.linkLabel1.TabIndex = 40;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login Here";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // pictureBox5
+            // label5
             // 
-            this.pictureBox5.Image = global::CsharpBook.Properties.Resources.Settings;
-            this.pictureBox5.Location = new System.Drawing.Point(366, 501);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(33, 28);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 37;
-            this.pictureBox5.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(415, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(132, 13);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Already have an account?";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // Firstnamemb
+            // checkBox4
             // 
-            this.Firstnamemb.ForeColor = System.Drawing.Color.Red;
-            this.Firstnamemb.Location = new System.Drawing.Point(290, 60);
-            this.Firstnamemb.Name = "Firstnamemb";
-            this.Firstnamemb.Size = new System.Drawing.Size(100, 20);
-            this.Firstnamemb.TabIndex = 38;
-            this.Firstnamemb.Text = "!First Name required";
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(183, 407);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(42, 17);
+            this.checkBox4.TabIndex = 42;
+            this.checkBox4.Text = "No";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(470, 546);
-            this.Controls.Add(this.Firstnamemb);
+            this.ClientSize = new System.Drawing.Size(551, 546);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -428,13 +476,13 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.contactnumbertxtbx);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.countrytxtbx);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.emailaddresstxtbx);
+            this.Controls.Add(this.lastnametxtbx);
+            this.Controls.Add(this.firstnametxtbx);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -442,7 +490,6 @@
             this.Controls.Add(this.updatebttn);
             this.Controls.Add(this.registerbttn);
             this.Controls.Add(this.contactnumberlbl);
-            this.Controls.Add(this.dateofbirthlbl);
             this.Controls.Add(this.countrylbl);
             this.Controls.Add(this.genderlbl);
             this.Controls.Add(this.emailaddresslbl);
@@ -450,14 +497,15 @@
             this.Controls.Add(this.firstnamelbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form2";
+            this.Name = "Registration";
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,7 +520,6 @@
         private System.Windows.Forms.Label emailaddresslbl;
         private System.Windows.Forms.Label genderlbl;
         private System.Windows.Forms.Label countrylbl;
-        private System.Windows.Forms.Label dateofbirthlbl;
         private System.Windows.Forms.Label contactnumberlbl;
         private System.Windows.Forms.Button registerbttn;
         private System.Windows.Forms.Button updatebttn;
@@ -480,13 +527,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox firstnametxtbx;
+        private System.Windows.Forms.TextBox lastnametxtbx;
+        private System.Windows.Forms.TextBox emailaddresstxtbx;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox countrytxtbx;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox contactnumbertxtbx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -500,6 +547,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.MaskedTextBox Firstnamemb;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }

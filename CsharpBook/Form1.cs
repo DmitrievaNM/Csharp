@@ -19,7 +19,7 @@ namespace CsharpBook
 
         private void label1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new Registration().Show();
             this.Hide();
                 
         }
@@ -27,6 +27,19 @@ namespace CsharpBook
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            new Registration().Show();
+            this.Hide();
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            new Registration().Show();
+            this.Hide();
         }
     }
 }
