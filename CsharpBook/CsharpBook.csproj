@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="contents.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="contents.Designer.cs">
       <DependentUpon>contents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Firstpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Firstpage.Designer.cs">
+      <DependentUpon>Firstpage.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -78,11 +84,14 @@
     <Compile Include="QuizeForm1.Designer.cs">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="contents.resx">
       <DependentUpon>contents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Firstpage.resx">
+      <DependentUpon>Firstpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -103,6 +112,14 @@
     <EmbeddedResource Include="QuizeForm1.resx">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Contents.datasource" />
+    <None Include="Properties\DataSources\CsharpBook.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\CsharpBook.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Firstpage.datasource" />
+    <None Include="Properties\DataSources\login.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\QuizeForm1.datasource" />
+    <None Include="Properties\DataSources\Registration.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,6 +171,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cscs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fefe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdsd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dvdvdv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46-c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lolyf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xcxcxc.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

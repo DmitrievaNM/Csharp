@@ -18,14 +18,18 @@ namespace CsharpBook
         {
             InitializeComponent();
         }
-        SqlConnection conn;
-        SqlCommand cmd;
-        string connstr = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+
+
+
+
+        public static object ConfiguratioManager { get; private set; }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
+        
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -57,25 +61,25 @@ namespace CsharpBook
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("INSERT INTO Csharpusers (First Name, Last Name, Email Address, Gender, Country, Contact Number, Subscriptions, Terms And Conditions) Values (@First Name, @Last Name, @Email Address, @Gender, @Country, @Contact Number, @Subscriptions, @Terms And Conditions  )", conn);
-           
-            cmd.Parameters.AddWithValue("@First Name", firstnametxtbx.Text);
-            cmd.Parameters.AddWithValue("@Last Name", lastnametxtbx.Text);
-            cmd.Parameters.AddWithValue("@Email Address", emailaddresstxtbx.Text);
-            cmd.Parameters.AddWithValue("@Country", countrytxtbx.Text);
-            cmd.Parameters.AddWithValue("@Contact Number", contactnumbertxtbx.Text);
-       
 
-            conn.Open();
-            if (cmd.ExecuteNonQuery() == 1)
-            {
-                label6.ForeColor = System.Drawing.Color.Red;
-                label6.Text = "successfully added!";
-            }
-            conn.Close();
+        {
+            String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection con = new SqlConnection(dbString);
+
+            con.Open();
+            String sqlQuery = "INSERT INTO Csharpusers VALUES('" + firstnametxtbx.Text + "','" + lastnametxtbx.Text + "', '" + emailaddresstxtbx.Text + "')";
+
+            SqlCommand com = new SqlCommand(sqlQuery,con);
+            if (com.ExecuteNonQuery()==1)
+
+            
+
+            MessageBox.Show("UserControl Added Successfully");
+
+            con.Close();
         }
+
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -137,13 +141,13 @@ namespace CsharpBook
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new Firstpage().Show();
             this.Hide();
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new Firstpage().Show();
             this.Hide();
         }
 
@@ -159,6 +163,11 @@ namespace CsharpBook
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void countrycombobx_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
