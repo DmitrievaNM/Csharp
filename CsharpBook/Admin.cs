@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace CsharpBook
 {
-    public partial class login : Form
+    public partial class Admin : Form
     {
-        public login()
+        public Admin()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            new Firstpage().Show();
-            this.Hide();
         }
     }
 }
