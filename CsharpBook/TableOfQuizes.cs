@@ -19,7 +19,7 @@ namespace CsharpBook
 
         private void labelOverview_Click(object sender, EventArgs e)
         {
-            Form form = new QuizeForm1();
+            Form form = new QuizOverview();
             form.Show();
             this.Hide();
         }
@@ -28,6 +28,34 @@ namespace CsharpBook
         private void textBoxUserName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void labelEnvironment_Click(object sender, EventArgs e)
+        {
+            Form form = new QuizEnvironment();
+            form.Show();
+            this.Hide();
+        }
+
+        private void labelProgramStructure_Click(object sender, EventArgs e)
+        {
+            Form form = new QuizProgramStructure();
+            form.Show();
+            this.Hide();
+        }
+
+        private void labelBasicSyntax_Click(object sender, EventArgs e)
+        {
+            Form form = new QuizBasicSyntax();
+            form.Show();
+            this.Hide();
+        }
+
+        private void labelDecisionMaking_Click(object sender, EventArgs e)
+        {
+            Form form = new QuizDecisionMaking();
+            form.Show();
+            this.Hide();
         }
     }
 }

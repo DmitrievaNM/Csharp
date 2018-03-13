@@ -1,6 +1,6 @@
 ﻿namespace CsharpBook
 {
-    partial class QuizeForm1
+    partial class QuizOverview
     {
         /// <summary>
         /// Required designer variable.
@@ -972,7 +972,7 @@
             this.Q5label4Answer4.Size = new System.Drawing.Size(0, 19);
             this.Q5label4Answer4.TabIndex = 23;
             // 
-            // QuizeForm1
+            // QuizOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -980,8 +980,8 @@
             this.ClientSize = new System.Drawing.Size(843, 741);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
-            this.Name = "QuizeForm1";
-            this.Text = "Quize: Overview";
+            this.Name = "QuizOverview";
+            this.Text = "Quiz: Overview";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

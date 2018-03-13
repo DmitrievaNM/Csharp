@@ -78,6 +78,7 @@
             this.labelDecisionMaking.Size = new System.Drawing.Size(152, 26);
             this.labelDecisionMaking.TabIndex = 37;
             this.labelDecisionMaking.Text = "Decision making";
+            this.labelDecisionMaking.Click += new System.EventHandler(this.labelDecisionMaking_Click);
             // 
             // labelEnvironment
             // 
@@ -89,6 +90,7 @@
             this.labelEnvironment.Size = new System.Drawing.Size(121, 26);
             this.labelEnvironment.TabIndex = 34;
             this.labelEnvironment.Text = "Environment";
+            this.labelEnvironment.Click += new System.EventHandler(this.labelEnvironment_Click);
             // 
             // labelBasicSyntax
             // 
@@ -100,6 +102,7 @@
             this.labelBasicSyntax.Size = new System.Drawing.Size(115, 26);
             this.labelBasicSyntax.TabIndex = 36;
             this.labelBasicSyntax.Text = "Basic syntax";
+            this.labelBasicSyntax.Click += new System.EventHandler(this.labelBasicSyntax_Click);
             // 
             // labelProgramStructure
             // 
@@ -111,6 +114,7 @@
             this.labelProgramStructure.Size = new System.Drawing.Size(167, 26);
             this.labelProgramStructure.TabIndex = 35;
             this.labelProgramStructure.Text = "Program structure";
+            this.labelProgramStructure.Click += new System.EventHandler(this.labelProgramStructure_Click);
             // 
             // textBoxUserName
             // 

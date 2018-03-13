@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CsharpBook
 {
-    public partial class QuizeForm1 : Form
+    public partial class QuizOverview : Form
     {
-        public QuizeForm1()
+        public QuizOverview()
         {
             InitializeComponent();
         }

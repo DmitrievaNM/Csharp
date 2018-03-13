@@ -92,7 +92,7 @@ namespace CsharpBook
 
         private void label11_Click(object sender, EventArgs e)
         {
-            new QuizeForm1();
+            new QuizOverview();
             this.Hide();
         }
 
@@ -158,7 +158,7 @@ namespace CsharpBook
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            new QuizeForm1();
+            new QuizOverview();
             this.Hide();
         }
 
