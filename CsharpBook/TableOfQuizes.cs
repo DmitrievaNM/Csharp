@@ -23,5 +23,11 @@ namespace CsharpBook
             form.Show();
             this.Hide();
         }
+
+
+        private void textBoxUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

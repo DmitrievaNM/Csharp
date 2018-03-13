@@ -55,15 +55,16 @@
             this.label3Answer3Q1 = new System.Windows.Forms.Label();
             this.typeOfQuestion = new System.Windows.Forms.Label();
             this.TableOfQuizesLink = new System.Windows.Forms.LinkLabel();
-            this.Return = new System.Windows.Forms.Button();
             this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
             this.NameOfQuizLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.toolTipReturnToLecture = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.Return = new System.Windows.Forms.Button();
+            this.labelAttempted = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -75,6 +76,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.labelAttempted);
             this.panel1.Controls.Add(this.buttonCheck);
             this.panel1.Controls.Add(this.buttonTryAgain);
             this.panel1.Controls.Add(this.panel6);
@@ -403,22 +405,6 @@
             this.TableOfQuizesLink.Text = "Table of quizes";
             this.TableOfQuizesLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfQuizesLink_LinkClicked);
             // 
-            // Return
-            // 
-            this.Return.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Return.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Return.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
-            this.Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Return.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Return.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.Return.FlatAppearance.BorderSize = 0;
-            this.Return.Location = new System.Drawing.Point(507, 21);
-            this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(29, 24);
-            this.Return.TabIndex = 27;
-            this.toolTipReturnToLecture.SetToolTip(this.Return, "Return to the lecture");
-            this.Return.UseVisualStyleBackColor = false;
-            // 
             // TableOfContentsLink
             // 
             this.TableOfContentsLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -456,22 +442,6 @@
             this.panel11.Size = new System.Drawing.Size(843, 47);
             this.panel11.TabIndex = 28;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(678, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 24);
-            this.button1.TabIndex = 27;
-            this.toolTipReturnToLecture.SetToolTip(this.button1, "Return to the lecture");
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -504,6 +474,47 @@
             this.Score.Size = new System.Drawing.Size(47, 19);
             this.Score.TabIndex = 0;
             this.Score.Text = "Score";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Location = new System.Drawing.Point(678, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 24);
+            this.button1.TabIndex = 27;
+            this.toolTipReturnToLecture.SetToolTip(this.button1, "Return to the lecture");
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Return
+            // 
+            this.Return.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Return.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Return.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
+            this.Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Return.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Return.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.Return.FlatAppearance.BorderSize = 0;
+            this.Return.Location = new System.Drawing.Point(507, 21);
+            this.Return.Name = "Return";
+            this.Return.Size = new System.Drawing.Size(29, 24);
+            this.Return.TabIndex = 27;
+            this.toolTipReturnToLecture.SetToolTip(this.Return, "Return to the lecture");
+            this.Return.UseVisualStyleBackColor = false;
+            // 
+            // labelAttempted
+            // 
+            this.labelAttempted.AutoSize = true;
+            this.labelAttempted.Font = new System.Drawing.Font("Calibri", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAttempted.Location = new System.Drawing.Point(504, 644);
+            this.labelAttempted.Name = "labelAttempted";
+            this.labelAttempted.Size = new System.Drawing.Size(0, 15);
+            this.labelAttempted.TabIndex = 33;
             // 
             // QuizeForm1
             // 
@@ -569,5 +580,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBoxScore;
         private System.Windows.Forms.Label Score;
+        private System.Windows.Forms.Label labelAttempted;
     }
 }

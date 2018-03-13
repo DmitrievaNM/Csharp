@@ -17,6 +17,10 @@ namespace CsharpBook
             InitializeComponent();
         }
 
+        //private SqlConnection conn;
+        //private SqlCommand cmd;
+        //string connstr = Properties.Settings.Default.MyConnection;
+
         //Get all elements of one type
         public IEnumerable<Control> GetAll(Control control, Type type)
         {
@@ -67,6 +71,28 @@ namespace CsharpBook
 
             //Show user score
             textBoxScore.Text = "  " + score + "/2";
+
+            //Write douwn information about user, date and score of quiz to database
+
+            /*
+            DateTime currentDate = new DateTime();
+
+            conn = new SqlConnection(connstr);
+            cmd = new SqlCommand("INSERT INTO score (Name, Date, Score) VALUES (@Name, @Date, @Score) ", conn);
+
+            cmd.Parameters.AddWithValue("@Name", textBoxUserName.Text);
+            cmd.Parameters.AddWithValue("@Date", currentDate);
+            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+
+            conn.Open();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                labelAttempted.Text = "Attempted!";
+            }
+            conn.Close();
+
+            */
+
         }
 
         private void buttonTryAgain_Click(object sender, EventArgs e)
