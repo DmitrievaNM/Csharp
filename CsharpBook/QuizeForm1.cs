@@ -69,8 +69,25 @@ namespace CsharpBook
                 }
             }
 
+            //Cheking answer for Question3
+            if (radioButton1Q3.Checked)
+            {
+                label1Answer1Q2.Text = "Correct answer!";
+                //Counting rieght answers;
+                score++;
+            }
+
+            else
+            {
+                if (radioButton2Q3.Checked) label2Answer2Q2.Text = "Wrong answer!";
+                else
+                {
+                    if (radioButton3Q3.Checked) label3Answer3Q2.Text = "Wrong answer!";
+                }
+            }
+
             //Show user score
-            textBoxScore.Text = "  " + score + "/2";
+            textBoxScore.Text = "  " + score + "/5";
 
             //Write douwn information about user, date and score of quiz to database
 
