@@ -35,17 +35,17 @@ namespace CsharpBook
             int score = 0;
 
             //Cheking answer for Question1
-            if (radioButton1Q1.Checked) label1Answer1Q1.Text = "Wrong answer!";
+            if (radioButton1Q1.Checked) Q1label1Answer1.Text = "Wrong answer!";
             else
             {
-                if (radioButton2Q1.Checked) label2Answer2Q1.Text = "Wrong answer!";
+                if (radioButton2Q1.Checked) Q1label2Answer2.Text = "Wrong answer!";
                 else
                 {
                     if (radioButton3Q1.Checked)
                     {
-                        label3Answer3Q1.Text = "Correct answer!";
+                        Q1label3Answer3.Text = "Correct answer!";
 
-                        //Counting rieght answers;
+                        //Counting right answers;
                         score++;
                     }
 
@@ -55,36 +55,65 @@ namespace CsharpBook
             //Cheking answer for Question2
             if (radioButton1Q2.Checked)
             {
-                label1Answer1Q2.Text = "Correct answer!";
-                //Counting rieght answers;
+                Q2label1Answer1.Text = "Correct answer!";
+                //Counting right answers;
                 score++;
             }
 
             else
             {
-                if (radioButton2Q2.Checked) label2Answer2Q2.Text = "Wrong answer!";
+                if (radioButton2Q2.Checked) Q2label2Answer2.Text = "Wrong answer!";
                 else
                 {
-                    if (radioButton3Q2.Checked) label3Answer3Q2.Text = "Wrong answer!";
+                    if (radioButton3Q2.Checked) Q2label3Answer3.Text = "Wrong answer!";
                 }
             }
 
             //Cheking answer for Question3
             if (radioButton1Q3.Checked)
             {
-                label1Answer1Q2.Text = "Correct answer!";
-                //Counting rieght answers;
+                Q2label1Answer1.Text = "Correct answer!";
+                //Counting right answers;
                 score++;
             }
 
             else
             {
-                if (radioButton2Q3.Checked) label2Answer2Q2.Text = "Wrong answer!";
+                if (radioButton2Q3.Checked) Q2label2Answer2.Text = "Wrong answer!";
                 else
                 {
-                    if (radioButton3Q3.Checked) label3Answer3Q2.Text = "Wrong answer!";
+                    if (radioButton3Q3.Checked) Q2label3Answer3.Text = "Wrong answer!";
                 }
             }
+
+            // Cheking answer for Question4
+             if (radioButton1Q4.Checked)
+            {
+                Q4label1Answer1.Text = "Wrong answer!";
+            }
+             else
+                {
+                    if (radioButton2Q4.Checked)
+                    {
+                    Q4label2Answer2.Text = "Correct answer!";
+                    //Counting right answers;
+                    score++;
+                    }
+                }
+
+            //Cheking answer for Question5
+            if (radioButton1Q5.Checked) Q5label1Answer1.Text = "Wrong answer!";
+            else if (radioButton2Q5.Checked) Q5label2Answer2.Text = "Wrong answer!";
+            else if (radioButton3Q5.Checked)
+                {
+                    Q5label3Answer3.Text = "Correct answer!";
+                    //Counting right answers;
+                    score++;
+                }
+                else if (radioButton4Q5.Checked) Q5label4Answer4.Text = "Wrong answer!";
+              
+
+
 
             //Show user score
             textBoxScore.Text = "  " + score + "/5";
@@ -146,6 +175,11 @@ namespace CsharpBook
             Form form = new TableOfQuizesForm();
             form.Show();
             this.Hide();
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
