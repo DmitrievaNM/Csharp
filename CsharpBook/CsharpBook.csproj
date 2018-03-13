@@ -84,6 +84,12 @@
     <Compile Include="QuizeForm1.Designer.cs">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableOfQuizes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableOfQuizes.Designer.cs">
+      <DependentUpon>TableOfQuizes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="QuizeForm1.resx">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableOfQuizes.resx">
+      <DependentUpon>TableOfQuizes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Contents.datasource" />
     <None Include="Properties\DataSources\CsharpBook.Properties.Resources.datasource" />
