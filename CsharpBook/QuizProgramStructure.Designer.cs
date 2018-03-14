@@ -42,6 +42,11 @@
             this.radioButton2Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton1Q5 = new System.Windows.Forms.RadioButton();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Q5label2Answer2 = new System.Windows.Forms.Label();
@@ -97,11 +102,6 @@
             this.Return = new System.Windows.Forms.Button();
             this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
             this.NameOfQuizLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -315,6 +315,51 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(632, 245);
             this.panel12.TabIndex = 21;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(54, 209);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(416, 26);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "5. A struct cannot contain constants.";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(54, 168);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(416, 26);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "4. A struct cannot contain methods.";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(54, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(416, 26);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "3. A struct can contain protected data members..";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(54, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(416, 26);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "2. A struct can contain constructors.";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(54, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(416, 26);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "1. A struct can contain properties.";
             // 
             // label14
             // 
@@ -827,7 +872,7 @@
             this.radioButton3Q1.Location = new System.Drawing.Point(53, 196);
             this.radioButton3Q1.Name = "radioButton3Q1";
             this.radioButton3Q1.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
-            this.radioButton3Q1.Size = new System.Drawing.Size(278, 33);
+            this.radioButton3Q1.Size = new System.Drawing.Size(293, 33);
             this.radioButton3Q1.TabIndex = 14;
             this.radioButton3Q1.Text = "public static long Main(string[] args)";
             this.radioButton3Q1.UseVisualStyleBackColor = false;
@@ -841,7 +886,7 @@
             this.radioButton2Q1.Location = new System.Drawing.Point(53, 151);
             this.radioButton2Q1.Name = "radioButton2Q1";
             this.radioButton2Q1.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
-            this.radioButton2Q1.Size = new System.Drawing.Size(278, 33);
+            this.radioButton2Q1.Size = new System.Drawing.Size(293, 33);
             this.radioButton2Q1.TabIndex = 13;
             this.radioButton2Q1.Text = "public static int Main()";
             this.radioButton2Q1.UseVisualStyleBackColor = false;
@@ -855,7 +900,7 @@
             this.radioButton1Q1.Location = new System.Drawing.Point(52, 103);
             this.radioButton1Q1.Name = "radioButton1Q1";
             this.radioButton1Q1.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
-            this.radioButton1Q1.Size = new System.Drawing.Size(279, 33);
+            this.radioButton1Q1.Size = new System.Drawing.Size(294, 33);
             this.radioButton1Q1.TabIndex = 12;
             this.radioButton1Q1.Text = "public static void Main()";
             this.radioButton1Q1.UseVisualStyleBackColor = false;
@@ -897,7 +942,7 @@
             this.Q1label2Answer2.AutoSize = true;
             this.Q1label2Answer2.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Q1label2Answer2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Q1label2Answer2.Location = new System.Drawing.Point(352, 158);
+            this.Q1label2Answer2.Location = new System.Drawing.Point(367, 158);
             this.Q1label2Answer2.Name = "Q1label2Answer2";
             this.Q1label2Answer2.Size = new System.Drawing.Size(0, 19);
             this.Q1label2Answer2.TabIndex = 16;
@@ -908,7 +953,7 @@
             this.Q1label1Answer1.AutoSize = true;
             this.Q1label1Answer1.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Q1label1Answer1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Q1label1Answer1.Location = new System.Drawing.Point(352, 110);
+            this.Q1label1Answer1.Location = new System.Drawing.Point(367, 110);
             this.Q1label1Answer1.Name = "Q1label1Answer1";
             this.Q1label1Answer1.Size = new System.Drawing.Size(0, 19);
             this.Q1label1Answer1.TabIndex = 15;
@@ -919,7 +964,7 @@
             this.Q1label3Answer3.AutoSize = true;
             this.Q1label3Answer3.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Q1label3Answer3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.Q1label3Answer3.Location = new System.Drawing.Point(352, 203);
+            this.Q1label3Answer3.Location = new System.Drawing.Point(367, 203);
             this.Q1label3Answer3.Name = "Q1label3Answer3";
             this.Q1label3Answer3.Size = new System.Drawing.Size(0, 19);
             this.Q1label3Answer3.TabIndex = 17;
@@ -988,51 +1033,6 @@
             this.NameOfQuizLabel.Size = new System.Drawing.Size(219, 33);
             this.NameOfQuizLabel.TabIndex = 25;
             this.NameOfQuizLabel.Text = "Program structure";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(54, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(416, 26);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "1. A struct can contain properties.";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(54, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(416, 26);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "2. A struct can contain constructors.";
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(54, 127);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(416, 26);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "3. A struct can contain protected data members..";
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(54, 168);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(416, 26);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "4. A struct cannot contain methods.";
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(54, 209);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(416, 26);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "5. A struct cannot contain constants.";
             // 
             // QuizProgramStructure
             // 
