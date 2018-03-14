@@ -35,54 +35,53 @@
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.firstnamelbl = new System.Windows.Forms.Label();
-            this.lastnamelbl = new System.Windows.Forms.Label();
-            this.emailaddresslbl = new System.Windows.Forms.Label();
-            this.genderlbl = new System.Windows.Forms.Label();
-            this.countrylbl = new System.Windows.Forms.Label();
-            this.contactnumberlbl = new System.Windows.Forms.Label();
-            this.firstnametxtbx = new System.Windows.Forms.TextBox();
-            this.lastnametxtbx = new System.Windows.Forms.TextBox();
-            this.emailaddresstxtbx = new System.Windows.Forms.TextBox();
-            this.femalebtn = new System.Windows.Forms.RadioButton();
-            this.countrycombobx = new System.Windows.Forms.ComboBox();
-            this.malebtn = new System.Windows.Forms.RadioButton();
-            this.contactnumbertxtbx = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.yescheckbx = new System.Windows.Forms.CheckBox();
-            this.Nocheckbx = new System.Windows.Forms.CheckBox();
-            this.emailaddresstarlbl = new System.Windows.Forms.Label();
-            this.contactnumberstarlbl = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.termsstarlbl = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.updatebttn = new System.Windows.Forms.Button();
-            this.registerbttn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.termscheckbx = new System.Windows.Forms.CheckBox();
+            this.passstxtbx = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.confirmpwtxtbx = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Maleradiobtn = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.updatebttn = new System.Windows.Forms.Button();
+            this.registerbttn = new System.Windows.Forms.Button();
+            this.emailaddresstxtbx = new System.Windows.Forms.TextBox();
+            this.femaleradiobtn = new System.Windows.Forms.RadioButton();
+            this.lastnametxtbx = new System.Windows.Forms.TextBox();
+            this.Usernametxtbx = new System.Windows.Forms.TextBox();
+            this.firstnametxtbx = new System.Windows.Forms.TextBox();
+            this.genderlbl = new System.Windows.Forms.Label();
+            this.lastnamelbl = new System.Windows.Forms.Label();
+            this.firstnamelbl = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Idtxtbx = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 9);
+            this.label1.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(183, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 23);
+            this.label1.Size = new System.Drawing.Size(134, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Registration";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -90,7 +89,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(36, 532);
+            this.label9.Location = new System.Drawing.Point(33, 626);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 12;
@@ -100,7 +99,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(309, 532);
+            this.label10.Location = new System.Drawing.Point(306, 626);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 13;
@@ -110,7 +109,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(172, 532);
+            this.label11.Location = new System.Drawing.Point(169, 626);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 13);
             this.label11.TabIndex = 14;
@@ -120,7 +119,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(433, 531);
+            this.label4.Location = new System.Drawing.Point(430, 625);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 39;
@@ -130,10 +129,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(447, 19);
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(401, 18);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(68, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(64, 16);
             this.linkLabel1.TabIndex = 40;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Login Here";
@@ -142,294 +141,13 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(375, 36);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(339, 34);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 13);
+            this.label5.Size = new System.Drawing.Size(157, 16);
             this.label5.TabIndex = 41;
             this.label5.Text = "Already have an account?";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(430, 461);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "label6";
-            // 
-            // firstnamelbl
-            // 
-            this.firstnamelbl.AutoSize = true;
-            this.firstnamelbl.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnamelbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.firstnamelbl.Location = new System.Drawing.Point(18, 4);
-            this.firstnamelbl.Name = "firstnamelbl";
-            this.firstnamelbl.Size = new System.Drawing.Size(73, 13);
-            this.firstnamelbl.TabIndex = 35;
-            this.firstnamelbl.Text = "First Name:";
-            // 
-            // lastnamelbl
-            // 
-            this.lastnamelbl.AutoSize = true;
-            this.lastnamelbl.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastnamelbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lastnamelbl.Location = new System.Drawing.Point(18, 36);
-            this.lastnamelbl.Name = "lastnamelbl";
-            this.lastnamelbl.Size = new System.Drawing.Size(72, 13);
-            this.lastnamelbl.TabIndex = 36;
-            this.lastnamelbl.Text = "Last Name:";
-            // 
-            // emailaddresslbl
-            // 
-            this.emailaddresslbl.AutoSize = true;
-            this.emailaddresslbl.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailaddresslbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.emailaddresslbl.Location = new System.Drawing.Point(18, 67);
-            this.emailaddresslbl.Name = "emailaddresslbl";
-            this.emailaddresslbl.Size = new System.Drawing.Size(93, 13);
-            this.emailaddresslbl.TabIndex = 37;
-            this.emailaddresslbl.Text = "Email Address:";
-            // 
-            // genderlbl
-            // 
-            this.genderlbl.AutoSize = true;
-            this.genderlbl.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderlbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.genderlbl.Location = new System.Drawing.Point(20, 100);
-            this.genderlbl.Name = "genderlbl";
-            this.genderlbl.Size = new System.Drawing.Size(54, 13);
-            this.genderlbl.TabIndex = 38;
-            this.genderlbl.Text = "Gender:";
-            // 
-            // countrylbl
-            // 
-            this.countrylbl.AutoSize = true;
-            this.countrylbl.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countrylbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.countrylbl.Location = new System.Drawing.Point(20, 137);
-            this.countrylbl.Name = "countrylbl";
-            this.countrylbl.Size = new System.Drawing.Size(58, 13);
-            this.countrylbl.TabIndex = 39;
-            this.countrylbl.Text = "Country:";
-            // 
-            // contactnumberlbl
-            // 
-            this.contactnumberlbl.AutoSize = true;
-            this.contactnumberlbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.contactnumberlbl.Location = new System.Drawing.Point(18, 181);
-            this.contactnumberlbl.Name = "contactnumberlbl";
-            this.contactnumberlbl.Size = new System.Drawing.Size(87, 13);
-            this.contactnumberlbl.TabIndex = 40;
-            this.contactnumberlbl.Text = "Contact Number:";
-            // 
-            // firstnametxtbx
-            // 
-            this.firstnametxtbx.Location = new System.Drawing.Point(172, 2);
-            this.firstnametxtbx.Name = "firstnametxtbx";
-            this.firstnametxtbx.Size = new System.Drawing.Size(100, 20);
-            this.firstnametxtbx.TabIndex = 41;
-            // 
-            // lastnametxtbx
-            // 
-            this.lastnametxtbx.Location = new System.Drawing.Point(172, 36);
-            this.lastnametxtbx.Name = "lastnametxtbx";
-            this.lastnametxtbx.Size = new System.Drawing.Size(100, 20);
-            this.lastnametxtbx.TabIndex = 42;
-            // 
-            // emailaddresstxtbx
-            // 
-            this.emailaddresstxtbx.Location = new System.Drawing.Point(172, 67);
-            this.emailaddresstxtbx.Name = "emailaddresstxtbx";
-            this.emailaddresstxtbx.Size = new System.Drawing.Size(100, 20);
-            this.emailaddresstxtbx.TabIndex = 43;
-            // 
-            // femalebtn
-            // 
-            this.femalebtn.AutoSize = true;
-            this.femalebtn.Location = new System.Drawing.Point(226, 98);
-            this.femalebtn.Name = "femalebtn";
-            this.femalebtn.Size = new System.Drawing.Size(59, 17);
-            this.femalebtn.TabIndex = 44;
-            this.femalebtn.Text = "Female";
-            this.femalebtn.UseVisualStyleBackColor = true;
-            // 
-            // countrycombobx
-            // 
-            this.countrycombobx.FormattingEnabled = true;
-            this.countrycombobx.Items.AddRange(new object[] {
-            "Sri Lanka",
-            "New Zealand",
-            "Australia"});
-            this.countrycombobx.Location = new System.Drawing.Point(172, 129);
-            this.countrycombobx.Name = "countrycombobx";
-            this.countrycombobx.Size = new System.Drawing.Size(100, 21);
-            this.countrycombobx.TabIndex = 45;
-            this.countrycombobx.SelectedIndexChanged += new System.EventHandler(this.countrycombobx_SelectedIndexChanged);
-            // 
-            // malebtn
-            // 
-            this.malebtn.AutoSize = true;
-            this.malebtn.Location = new System.Drawing.Point(172, 98);
-            this.malebtn.Name = "malebtn";
-            this.malebtn.Size = new System.Drawing.Size(48, 17);
-            this.malebtn.TabIndex = 46;
-            this.malebtn.Text = "Male";
-            this.malebtn.UseVisualStyleBackColor = true;
-            // 
-            // contactnumbertxtbx
-            // 
-            this.contactnumbertxtbx.Location = new System.Drawing.Point(172, 178);
-            this.contactnumbertxtbx.Name = "contactnumbertxtbx";
-            this.contactnumbertxtbx.Size = new System.Drawing.Size(100, 20);
-            this.contactnumbertxtbx.TabIndex = 47;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(20, 229);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Subscriptions:";
-            // 
-            // yescheckbx
-            // 
-            this.yescheckbx.AutoSize = true;
-            this.yescheckbx.Location = new System.Drawing.Point(172, 228);
-            this.yescheckbx.Name = "yescheckbx";
-            this.yescheckbx.Size = new System.Drawing.Size(44, 17);
-            this.yescheckbx.TabIndex = 49;
-            this.yescheckbx.Text = "Yes";
-            this.yescheckbx.UseVisualStyleBackColor = true;
-            // 
-            // Nocheckbx
-            // 
-            this.Nocheckbx.AutoSize = true;
-            this.Nocheckbx.Location = new System.Drawing.Point(172, 251);
-            this.Nocheckbx.Name = "Nocheckbx";
-            this.Nocheckbx.Size = new System.Drawing.Size(40, 17);
-            this.Nocheckbx.TabIndex = 50;
-            this.Nocheckbx.Text = "No";
-            this.Nocheckbx.UseVisualStyleBackColor = true;
-            // 
-            // emailaddresstarlbl
-            // 
-            this.emailaddresstarlbl.AutoSize = true;
-            this.emailaddresstarlbl.ForeColor = System.Drawing.Color.Red;
-            this.emailaddresstarlbl.Location = new System.Drawing.Point(124, 67);
-            this.emailaddresstarlbl.Name = "emailaddresstarlbl";
-            this.emailaddresstarlbl.Size = new System.Drawing.Size(11, 13);
-            this.emailaddresstarlbl.TabIndex = 52;
-            this.emailaddresstarlbl.Text = "*";
-            // 
-            // contactnumberstarlbl
-            // 
-            this.contactnumberstarlbl.AutoSize = true;
-            this.contactnumberstarlbl.ForeColor = System.Drawing.Color.Red;
-            this.contactnumberstarlbl.Location = new System.Drawing.Point(137, 176);
-            this.contactnumberstarlbl.Name = "contactnumberstarlbl";
-            this.contactnumberstarlbl.Size = new System.Drawing.Size(11, 13);
-            this.contactnumberstarlbl.TabIndex = 53;
-            this.contactnumberstarlbl.Text = "*";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.termsstarlbl);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.updatebttn);
-            this.panel1.Controls.Add(this.registerbttn);
-            this.panel1.Controls.Add(this.contactnumberstarlbl);
-            this.panel1.Controls.Add(this.emailaddresstarlbl);
-            this.panel1.Controls.Add(this.Nocheckbx);
-            this.panel1.Controls.Add(this.yescheckbx);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.contactnumbertxtbx);
-            this.panel1.Controls.Add(this.malebtn);
-            this.panel1.Controls.Add(this.countrycombobx);
-            this.panel1.Controls.Add(this.femalebtn);
-            this.panel1.Controls.Add(this.emailaddresstxtbx);
-            this.panel1.Controls.Add(this.lastnametxtbx);
-            this.panel1.Controls.Add(this.firstnametxtbx);
-            this.panel1.Controls.Add(this.contactnumberlbl);
-            this.panel1.Controls.Add(this.countrylbl);
-            this.panel1.Controls.Add(this.genderlbl);
-            this.panel1.Controls.Add(this.emailaddresslbl);
-            this.panel1.Controls.Add(this.lastnamelbl);
-            this.panel1.Controls.Add(this.firstnamelbl);
-            this.panel1.Location = new System.Drawing.Point(52, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(335, 417);
-            this.panel1.TabIndex = 45;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(158, 337);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(42, 17);
-            this.checkBox4.TabIndex = 60;
-            this.checkBox4.Text = "No";
-            this.checkBox4.UseVisualStyleBackColor = false;
-            // 
-            // termsstarlbl
-            // 
-            this.termsstarlbl.AutoSize = true;
-            this.termsstarlbl.ForeColor = System.Drawing.Color.Red;
-            this.termsstarlbl.Location = new System.Drawing.Point(171, 282);
-            this.termsstarlbl.Name = "termsstarlbl";
-            this.termsstarlbl.Size = new System.Drawing.Size(11, 13);
-            this.termsstarlbl.TabIndex = 59;
-            this.termsstarlbl.Text = "*";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(158, 314);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(47, 17);
-            this.checkBox3.TabIndex = 58;
-            this.checkBox3.Text = "Yes";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(11, 282);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 13);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Terms And Conditions:";
-            // 
-            // updatebttn
-            // 
-            this.updatebttn.BackColor = System.Drawing.Color.Green;
-            this.updatebttn.Location = new System.Drawing.Point(254, 381);
-            this.updatebttn.Name = "updatebttn";
-            this.updatebttn.Size = new System.Drawing.Size(75, 32);
-            this.updatebttn.TabIndex = 56;
-            this.updatebttn.Text = "Update";
-            this.updatebttn.UseVisualStyleBackColor = false;
-            // 
-            // registerbttn
-            // 
-            this.registerbttn.BackColor = System.Drawing.SystemColors.Highlight;
-            this.registerbttn.Location = new System.Drawing.Point(96, 381);
-            this.registerbttn.Name = "registerbttn";
-            this.registerbttn.Size = new System.Drawing.Size(75, 32);
-            this.registerbttn.TabIndex = 55;
-            this.registerbttn.Text = "Register";
-            this.registerbttn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -444,7 +162,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::CsharpBook.Properties.Resources.login;
-            this.pictureBox6.Location = new System.Drawing.Point(433, 501);
+            this.pictureBox6.Location = new System.Drawing.Point(430, 595);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(33, 28);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -455,7 +173,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::CsharpBook.Properties.Resources.Settings;
-            this.pictureBox5.Location = new System.Drawing.Point(315, 502);
+            this.pictureBox5.Location = new System.Drawing.Point(312, 596);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(33, 28);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -466,7 +184,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CsharpBook.Properties.Resources.quizz;
-            this.pictureBox4.Location = new System.Drawing.Point(175, 501);
+            this.pictureBox4.Location = new System.Drawing.Point(172, 595);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -477,7 +195,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::CsharpBook.Properties.Resources._11539_200;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 501);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 595);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 28);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -487,22 +205,288 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(-16, 501);
+            this.pictureBox2.Location = new System.Drawing.Point(-27, 585);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(557, 58);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Idtxtbx);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.termscheckbx);
+            this.groupBox1.Controls.Add(this.passstxtbx);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.confirmpwtxtbx);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.Maleradiobtn);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.updatebttn);
+            this.groupBox1.Controls.Add(this.registerbttn);
+            this.groupBox1.Controls.Add(this.emailaddresstxtbx);
+            this.groupBox1.Controls.Add(this.femaleradiobtn);
+            this.groupBox1.Controls.Add(this.lastnametxtbx);
+            this.groupBox1.Controls.Add(this.Usernametxtbx);
+            this.groupBox1.Controls.Add(this.firstnametxtbx);
+            this.groupBox1.Controls.Add(this.genderlbl);
+            this.groupBox1.Controls.Add(this.lastnamelbl);
+            this.groupBox1.Controls.Add(this.firstnamelbl);
+            this.groupBox1.Location = new System.Drawing.Point(36, 55);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(427, 513);
+            this.groupBox1.TabIndex = 47;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(349, 483);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 13);
+            this.label14.TabIndex = 93;
+            this.label14.Text = "label14";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(265, 168);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 92;
+            this.label6.Text = "label6";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(264, 275);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 91;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(271, 388);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 90;
+            this.label2.Text = "label2";
+            // 
+            // termscheckbx
+            // 
+            this.termscheckbx.AutoSize = true;
+            this.termscheckbx.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termscheckbx.Location = new System.Drawing.Point(57, 428);
+            this.termscheckbx.Name = "termscheckbx";
+            this.termscheckbx.Size = new System.Drawing.Size(215, 21);
+            this.termscheckbx.TabIndex = 89;
+            this.termscheckbx.Text = "I Agree Terms And Conditions";
+            this.termscheckbx.UseVisualStyleBackColor = true;
+            // 
+            // passstxtbx
+            // 
+            this.passstxtbx.Location = new System.Drawing.Point(31, 323);
+            this.passstxtbx.Name = "passstxtbx";
+            this.passstxtbx.Size = new System.Drawing.Size(228, 20);
+            this.passstxtbx.TabIndex = 88;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(28, 362);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(106, 16);
+            this.label13.TabIndex = 87;
+            this.label13.Text = "Confirm Password:";
+            // 
+            // confirmpwtxtbx
+            // 
+            this.confirmpwtxtbx.Location = new System.Drawing.Point(31, 381);
+            this.confirmpwtxtbx.Name = "confirmpwtxtbx";
+            this.confirmpwtxtbx.Size = new System.Drawing.Size(228, 20);
+            this.confirmpwtxtbx.TabIndex = 86;
+            this.confirmpwtxtbx.TextChanged += new System.EventHandler(this.confirmpwtxtbx_TextChanged_1);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(28, 142);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 16);
+            this.label12.TabIndex = 85;
+            this.label12.Text = "Username:";
+            // 
+            // Maleradiobtn
+            // 
+            this.Maleradiobtn.AutoSize = true;
+            this.Maleradiobtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Maleradiobtn.Location = new System.Drawing.Point(103, 212);
+            this.Maleradiobtn.Name = "Maleradiobtn";
+            this.Maleradiobtn.Size = new System.Drawing.Size(54, 20);
+            this.Maleradiobtn.TabIndex = 84;
+            this.Maleradiobtn.Text = "Male";
+            this.Maleradiobtn.UseVisualStyleBackColor = true;
+            
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(28, 304);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 16);
+            this.label8.TabIndex = 83;
+            this.label8.Text = "Password:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(31, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 16);
+            this.label7.TabIndex = 82;
+            this.label7.Text = "Email Address:";
+            // 
+            // updatebttn
+            // 
+            this.updatebttn.BackColor = System.Drawing.Color.Green;
+            this.updatebttn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebttn.Location = new System.Drawing.Point(267, 465);
+            this.updatebttn.Name = "updatebttn";
+            this.updatebttn.Size = new System.Drawing.Size(75, 32);
+            this.updatebttn.TabIndex = 81;
+            this.updatebttn.Text = "Update";
+            this.updatebttn.UseVisualStyleBackColor = false;
+            this.updatebttn.Click += new System.EventHandler(this.updatebttn_Click);
+            // 
+            // registerbttn
+            // 
+            this.registerbttn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.registerbttn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerbttn.Location = new System.Drawing.Point(114, 465);
+            this.registerbttn.Name = "registerbttn";
+            this.registerbttn.Size = new System.Drawing.Size(75, 32);
+            this.registerbttn.TabIndex = 80;
+            this.registerbttn.Text = "Register";
+            this.registerbttn.UseVisualStyleBackColor = false;
+            this.registerbttn.Click += new System.EventHandler(this.registerbttn_Click_1);
+            // 
+            // emailaddresstxtbx
+            // 
+            this.emailaddresstxtbx.Location = new System.Drawing.Point(31, 268);
+            this.emailaddresstxtbx.Name = "emailaddresstxtbx";
+            this.emailaddresstxtbx.Size = new System.Drawing.Size(228, 20);
+            this.emailaddresstxtbx.TabIndex = 79;
+            this.emailaddresstxtbx.TextChanged += new System.EventHandler(this.emailaddresstxtbx_TextChanged_1);
+            // 
+            // femaleradiobtn
+            // 
+            this.femaleradiobtn.AutoSize = true;
+            this.femaleradiobtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.femaleradiobtn.Location = new System.Drawing.Point(31, 212);
+            this.femaleradiobtn.Name = "femaleradiobtn";
+            this.femaleradiobtn.Size = new System.Drawing.Size(65, 20);
+            this.femaleradiobtn.TabIndex = 78;
+            this.femaleradiobtn.Text = "Female";
+            this.femaleradiobtn.UseVisualStyleBackColor = true;
+            this.femaleradiobtn.CheckedChanged += new System.EventHandler(this.femaleradiobtn_CheckedChanged_1);
+            // 
+            // lastnametxtbx
+            // 
+            this.lastnametxtbx.Location = new System.Drawing.Point(28, 99);
+            this.lastnametxtbx.Name = "lastnametxtbx";
+            this.lastnametxtbx.Size = new System.Drawing.Size(228, 20);
+            this.lastnametxtbx.TabIndex = 77;
+            // 
+            // Usernametxtbx
+            // 
+            this.Usernametxtbx.Location = new System.Drawing.Point(31, 161);
+            this.Usernametxtbx.Name = "Usernametxtbx";
+            this.Usernametxtbx.Size = new System.Drawing.Size(225, 20);
+            this.Usernametxtbx.TabIndex = 76;
+            this.Usernametxtbx.TextChanged += new System.EventHandler(this.Usernametxtbx_TextChanged_1);
+            // 
+            // firstnametxtbx
+            // 
+            this.firstnametxtbx.Location = new System.Drawing.Point(28, 45);
+            this.firstnametxtbx.Name = "firstnametxtbx";
+            this.firstnametxtbx.Size = new System.Drawing.Size(228, 20);
+            this.firstnametxtbx.TabIndex = 75;
+            // 
+            // genderlbl
+            // 
+            this.genderlbl.AutoSize = true;
+            this.genderlbl.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderlbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.genderlbl.Location = new System.Drawing.Point(28, 193);
+            this.genderlbl.Name = "genderlbl";
+            this.genderlbl.Size = new System.Drawing.Size(53, 16);
+            this.genderlbl.TabIndex = 74;
+            this.genderlbl.Text = "Gender:";
+            // 
+            // lastnamelbl
+            // 
+            this.lastnamelbl.AutoSize = true;
+            this.lastnamelbl.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnamelbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lastnamelbl.Location = new System.Drawing.Point(28, 80);
+            this.lastnamelbl.Name = "lastnamelbl";
+            this.lastnamelbl.Size = new System.Drawing.Size(68, 16);
+            this.lastnamelbl.TabIndex = 73;
+            this.lastnamelbl.Text = "Last Name:";
+            // 
+            // firstnamelbl
+            // 
+            this.firstnamelbl.AutoSize = true;
+            this.firstnamelbl.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnamelbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.firstnamelbl.Location = new System.Drawing.Point(28, 26);
+            this.firstnamelbl.Name = "firstnamelbl";
+            this.firstnamelbl.Size = new System.Drawing.Size(65, 16);
+            this.firstnamelbl.TabIndex = 72;
+            this.firstnamelbl.Text = "First Name:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(274, 45);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(16, 13);
+            this.label15.TabIndex = 94;
+            this.label15.Text = "Id";
+            // 
+            // Idtxtbx
+            // 
+            this.Idtxtbx.Location = new System.Drawing.Point(321, 45);
+            this.Idtxtbx.Name = "Idtxtbx";
+            this.Idtxtbx.Size = new System.Drawing.Size(100, 20);
+            this.Idtxtbx.TabIndex = 95;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(527, 546);
+            this.ClientSize = new System.Drawing.Size(496, 655);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label4);
@@ -519,14 +503,14 @@
             this.Name = "Registration";
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -545,32 +529,31 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label firstnamelbl;
-        private System.Windows.Forms.Label lastnamelbl;
-        private System.Windows.Forms.Label emailaddresslbl;
-        private System.Windows.Forms.Label genderlbl;
-        private System.Windows.Forms.Label countrylbl;
-        private System.Windows.Forms.Label contactnumberlbl;
-        private System.Windows.Forms.TextBox firstnametxtbx;
-        private System.Windows.Forms.TextBox lastnametxtbx;
-        private System.Windows.Forms.TextBox emailaddresstxtbx;
-        private System.Windows.Forms.RadioButton femalebtn;
-        private System.Windows.Forms.ComboBox countrycombobx;
-        private System.Windows.Forms.RadioButton malebtn;
-        private System.Windows.Forms.TextBox contactnumbertxtbx;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox yescheckbx;
-        private System.Windows.Forms.CheckBox Nocheckbx;
-        private System.Windows.Forms.Label emailaddresstarlbl;
-        private System.Windows.Forms.Label contactnumberstarlbl;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label termsstarlbl;
-        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox termscheckbx;
+        private System.Windows.Forms.TextBox passstxtbx;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox confirmpwtxtbx;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton Maleradiobtn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button updatebttn;
         private System.Windows.Forms.Button registerbttn;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox emailaddresstxtbx;
+        private System.Windows.Forms.RadioButton femaleradiobtn;
+        private System.Windows.Forms.TextBox lastnametxtbx;
+        private System.Windows.Forms.TextBox Usernametxtbx;
+        private System.Windows.Forms.TextBox firstnametxtbx;
+        private System.Windows.Forms.Label genderlbl;
+        private System.Windows.Forms.Label lastnamelbl;
+        private System.Windows.Forms.Label firstnamelbl;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox Idtxtbx;
+        private System.Windows.Forms.Label label15;
     }
 }

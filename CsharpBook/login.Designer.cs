@@ -39,6 +39,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -66,12 +68,13 @@
             // 
             this.loginlbl.BackColor = System.Drawing.SystemColors.Highlight;
             this.loginlbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.loginlbl.Location = new System.Drawing.Point(280, 187);
+            this.loginlbl.Location = new System.Drawing.Point(334, 187);
             this.loginlbl.Name = "loginlbl";
             this.loginlbl.Size = new System.Drawing.Size(73, 29);
             this.loginlbl.TabIndex = 17;
             this.loginlbl.Text = "Login";
             this.loginlbl.UseVisualStyleBackColor = false;
+            this.loginlbl.Click += new System.EventHandler(this.loginlbl_Click);
             // 
             // psstxtbx
             // 
@@ -149,12 +152,35 @@
             this.label2.Text = "Main Menue";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(220, 241);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "label3";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(223, 187);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 29);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Admin Login";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(448, 311);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
@@ -188,5 +214,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
