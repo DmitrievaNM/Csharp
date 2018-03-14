@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.Q5label4Answer4 = new System.Windows.Forms.Label();
+            this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton3Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton1Q5 = new System.Windows.Forms.RadioButton();
@@ -96,8 +98,6 @@
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.toolTipReturnToLecture = new System.Windows.Forms.ToolTip(this.components);
-            this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
-            this.Q5label4Answer4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -151,6 +151,32 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(739, 333);
             this.panel10.TabIndex = 33;
+            // 
+            // Q5label4Answer4
+            // 
+            this.Q5label4Answer4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Q5label4Answer4.AutoSize = true;
+            this.Q5label4Answer4.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q5label4Answer4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.Q5label4Answer4.Location = new System.Drawing.Point(383, 292);
+            this.Q5label4Answer4.Name = "Q5label4Answer4";
+            this.Q5label4Answer4.Size = new System.Drawing.Size(0, 19);
+            this.Q5label4Answer4.TabIndex = 23;
+            // 
+            // radioButton4Q5
+            // 
+            this.radioButton4Q5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton4Q5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton4Q5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4Q5.Location = new System.Drawing.Point(52, 285);
+            this.radioButton4Q5.Name = "radioButton4Q5";
+            this.radioButton4Q5.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
+            this.radioButton4Q5.Size = new System.Drawing.Size(304, 33);
+            this.radioButton4Q5.TabIndex = 22;
+            this.radioButton4Q5.TabStop = true;
+            this.radioButton4Q5.Text = "ToDateTime";
+            this.radioButton4Q5.UseVisualStyleBackColor = false;
             // 
             // radioButton3Q5
             // 
@@ -845,6 +871,7 @@
             this.TableOfContentsLink.TabIndex = 26;
             this.TableOfContentsLink.TabStop = true;
             this.TableOfContentsLink.Text = "Table of contents";
+            this.TableOfContentsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfContentsLink_LinkClicked);
             // 
             // NameOfQuizLabel
             // 
@@ -926,6 +953,7 @@
             this.linkLabel1.TabIndex = 26;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Table of contents";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // textBoxScore
             // 
@@ -946,32 +974,6 @@
             this.Score.TabIndex = 0;
             this.Score.Text = "Score";
             // 
-            // radioButton4Q5
-            // 
-            this.radioButton4Q5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4Q5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton4Q5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4Q5.Location = new System.Drawing.Point(52, 285);
-            this.radioButton4Q5.Name = "radioButton4Q5";
-            this.radioButton4Q5.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
-            this.radioButton4Q5.Size = new System.Drawing.Size(304, 33);
-            this.radioButton4Q5.TabIndex = 22;
-            this.radioButton4Q5.TabStop = true;
-            this.radioButton4Q5.Text = "ToDateTime";
-            this.radioButton4Q5.UseVisualStyleBackColor = false;
-            // 
-            // Q5label4Answer4
-            // 
-            this.Q5label4Answer4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Q5label4Answer4.AutoSize = true;
-            this.Q5label4Answer4.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Q5label4Answer4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Q5label4Answer4.Location = new System.Drawing.Point(383, 292);
-            this.Q5label4Answer4.Name = "Q5label4Answer4";
-            this.Q5label4Answer4.Size = new System.Drawing.Size(0, 19);
-            this.Q5label4Answer4.TabIndex = 23;
-            // 
             // QuizOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -982,7 +984,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "QuizOverview";
             this.Text = "Quiz: Overview";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel10.ResumeLayout(false);

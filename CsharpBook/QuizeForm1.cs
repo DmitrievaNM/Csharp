@@ -181,5 +181,19 @@ namespace CsharpBook
         {
 
         }
+
+        private void TableOfContentsLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form form = new Contents();
+            form.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form form = new Contents();
+            form.Show();
+            this.Hide();
+        }
     }
 }
