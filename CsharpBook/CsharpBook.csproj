@@ -70,6 +70,30 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuizBasicSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizBasicSyntax.Designer.cs">
+      <DependentUpon>QuizBasicSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDecisionMaking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizDecisionMaking.Designer.cs">
+      <DependentUpon>QuizDecisionMaking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizEnvironment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizEnvironment.Designer.cs">
+      <DependentUpon>QuizEnvironment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizProgramStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizProgramStructure.Designer.cs">
+      <DependentUpon>QuizProgramStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +108,12 @@
     <Compile Include="QuizeForm1.Designer.cs">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableOfQuizes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableOfQuizes.Designer.cs">
+      <DependentUpon>TableOfQuizes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +125,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizBasicSyntax.resx">
+      <DependentUpon>QuizBasicSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizDecisionMaking.resx">
+      <DependentUpon>QuizDecisionMaking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizEnvironment.resx">
+      <DependentUpon>QuizEnvironment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizProgramStructure.resx">
+      <DependentUpon>QuizProgramStructure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -111,6 +153,9 @@
     </Compile>
     <EmbeddedResource Include="QuizeForm1.resx">
       <DependentUpon>QuizeForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableOfQuizes.resx">
+      <DependentUpon>TableOfQuizes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Contents.datasource" />
     <None Include="Properties\DataSources\CsharpBook.Properties.Resources.datasource" />
