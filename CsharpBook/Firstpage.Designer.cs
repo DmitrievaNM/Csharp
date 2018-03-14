@@ -90,6 +90,7 @@
             this.Login.Size = new System.Drawing.Size(65, 18);
             this.Login.TabIndex = 7;
             this.Login.Text = "Contents";
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // label6
             // 
@@ -101,6 +102,7 @@
             this.label6.Size = new System.Drawing.Size(40, 18);
             this.label6.TabIndex = 6;
             this.label6.Text = "Quiz";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 

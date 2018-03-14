@@ -88,5 +88,17 @@ namespace CsharpBook
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            new TableOfQuizesForm().Show();
+            this.Hide();
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+            new Contents().Show();
+            this.Hide();
+        }
     }
 }
