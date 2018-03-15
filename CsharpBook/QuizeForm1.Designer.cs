@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.Q5label4Answer4 = new System.Windows.Forms.Label();
             this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
@@ -52,6 +53,7 @@
             this.Q4label2Answer2 = new System.Windows.Forms.Label();
             this.Q4label1Answer1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.buttonCheck = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton3Q3 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q3 = new System.Windows.Forms.RadioButton();
@@ -75,6 +77,7 @@
             this.Q2label1Answer1 = new System.Windows.Forms.Label();
             this.Q2label3Answer3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonTryAgain = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton3Q1 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q1 = new System.Windows.Forms.RadioButton();
@@ -90,15 +93,12 @@
             this.Return = new System.Windows.Forms.Button();
             this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
             this.NameOfQuizLabel = new System.Windows.Forms.Label();
-            this.buttonCheck = new System.Windows.Forms.Button();
-            this.buttonTryAgain = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.toolTipReturnToLecture = new System.Windows.Forms.ToolTip(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -134,6 +134,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(843, 553);
             this.panel1.TabIndex = 27;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(788, 1607);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "label3";
             // 
             // panel10
             // 
@@ -410,6 +420,19 @@
             this.label13.Size = new System.Drawing.Size(187, 14);
             this.label13.TabIndex = 11;
             this.label13.Text = "(Choose only one correct answer)";
+            // 
+            // buttonCheck
+            // 
+            this.buttonCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCheck.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCheck.Location = new System.Drawing.Point(601, 1516);
+            this.buttonCheck.Name = "buttonCheck";
+            this.buttonCheck.Size = new System.Drawing.Size(75, 23);
+            this.buttonCheck.TabIndex = 32;
+            this.buttonCheck.Text = "Check";
+            this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
             // 
             // panel3
             // 
@@ -696,6 +719,19 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "(Choose only one correct answer)";
             // 
+            // buttonTryAgain
+            // 
+            this.buttonTryAgain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonTryAgain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTryAgain.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTryAgain.Location = new System.Drawing.Point(698, 1516);
+            this.buttonTryAgain.Name = "buttonTryAgain";
+            this.buttonTryAgain.Size = new System.Drawing.Size(75, 23);
+            this.buttonTryAgain.TabIndex = 31;
+            this.buttonTryAgain.Text = "Try again";
+            this.buttonTryAgain.UseVisualStyleBackColor = true;
+            this.buttonTryAgain.Click += new System.EventHandler(this.buttonTryAgain_Click);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -887,32 +923,6 @@
             this.NameOfQuizLabel.TabIndex = 25;
             this.NameOfQuizLabel.Text = "Overview";
             // 
-            // buttonCheck
-            // 
-            this.buttonCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCheck.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCheck.Location = new System.Drawing.Point(601, 1516);
-            this.buttonCheck.Name = "buttonCheck";
-            this.buttonCheck.Size = new System.Drawing.Size(75, 23);
-            this.buttonCheck.TabIndex = 32;
-            this.buttonCheck.Text = "Check";
-            this.buttonCheck.UseVisualStyleBackColor = true;
-            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
-            // 
-            // buttonTryAgain
-            // 
-            this.buttonTryAgain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonTryAgain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonTryAgain.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTryAgain.Location = new System.Drawing.Point(698, 1516);
-            this.buttonTryAgain.Name = "buttonTryAgain";
-            this.buttonTryAgain.Size = new System.Drawing.Size(75, 23);
-            this.buttonTryAgain.TabIndex = 31;
-            this.buttonTryAgain.Text = "Try again";
-            this.buttonTryAgain.UseVisualStyleBackColor = true;
-            this.buttonTryAgain.Click += new System.EventHandler(this.buttonTryAgain_Click);
-            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.Control;
@@ -975,15 +985,6 @@
             this.Score.Size = new System.Drawing.Size(47, 19);
             this.Score.TabIndex = 0;
             this.Score.Text = "Score";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(788, 1607);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "label3";
             // 
             // QuizOverview
             // 
