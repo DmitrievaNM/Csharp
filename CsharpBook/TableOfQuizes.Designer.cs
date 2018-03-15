@@ -159,6 +159,7 @@
             this.TableOfContentsLink.TabIndex = 39;
             this.TableOfContentsLink.TabStop = true;
             this.TableOfContentsLink.Text = "Table of contents";
+            this.TableOfContentsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfContentsLink_LinkClicked);
             // 
             // TableOfQuizesForm
             // 

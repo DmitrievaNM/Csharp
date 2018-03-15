@@ -30,7 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.Q5label4Answer4 = new System.Windows.Forms.Label();
+            this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton3Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q5 = new System.Windows.Forms.RadioButton();
             this.radioButton1Q5 = new System.Windows.Forms.RadioButton();
@@ -50,6 +53,7 @@
             this.Q4label2Answer2 = new System.Windows.Forms.Label();
             this.Q4label1Answer1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.buttonCheck = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton3Q3 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q3 = new System.Windows.Forms.RadioButton();
@@ -73,6 +77,7 @@
             this.Q2label1Answer1 = new System.Windows.Forms.Label();
             this.Q2label3Answer3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonTryAgain = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton3Q1 = new System.Windows.Forms.RadioButton();
             this.radioButton2Q1 = new System.Windows.Forms.RadioButton();
@@ -88,16 +93,12 @@
             this.Return = new System.Windows.Forms.Button();
             this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
             this.NameOfQuizLabel = new System.Windows.Forms.Label();
-            this.buttonCheck = new System.Windows.Forms.Button();
-            this.buttonTryAgain = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.toolTipReturnToLecture = new System.Windows.Forms.ToolTip(this.components);
-            this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
-            this.Q5label4Answer4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -115,21 +116,34 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.buttonCheck);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.labelAttempted);
             this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.buttonTryAgain);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.TableOfQuizesLink);
             this.panel1.Controls.Add(this.Return);
             this.panel1.Controls.Add(this.TableOfContentsLink);
             this.panel1.Controls.Add(this.NameOfQuizLabel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 30);
-            this.panel1.Size = new System.Drawing.Size(843, 688);
+            this.panel1.Size = new System.Drawing.Size(843, 553);
             this.panel1.TabIndex = 27;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(788, 1607);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "label3";
             // 
             // panel10
             // 
@@ -147,10 +161,36 @@
             this.panel10.Controls.Add(this.Q5label1Answer1);
             this.panel10.Controls.Add(this.Q5label3Answer3);
             this.panel10.Controls.Add(this.label19);
-            this.panel10.Location = new System.Drawing.Point(38, 1145);
+            this.panel10.Location = new System.Drawing.Point(38, 1144);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(739, 333);
+            this.panel10.Size = new System.Drawing.Size(739, 339);
             this.panel10.TabIndex = 33;
+            // 
+            // Q5label4Answer4
+            // 
+            this.Q5label4Answer4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Q5label4Answer4.AutoSize = true;
+            this.Q5label4Answer4.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q5label4Answer4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.Q5label4Answer4.Location = new System.Drawing.Point(383, 292);
+            this.Q5label4Answer4.Name = "Q5label4Answer4";
+            this.Q5label4Answer4.Size = new System.Drawing.Size(0, 19);
+            this.Q5label4Answer4.TabIndex = 23;
+            // 
+            // radioButton4Q5
+            // 
+            this.radioButton4Q5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton4Q5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton4Q5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4Q5.Location = new System.Drawing.Point(52, 285);
+            this.radioButton4Q5.Name = "radioButton4Q5";
+            this.radioButton4Q5.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
+            this.radioButton4Q5.Size = new System.Drawing.Size(304, 33);
+            this.radioButton4Q5.TabIndex = 22;
+            this.radioButton4Q5.TabStop = true;
+            this.radioButton4Q5.Text = "ToDateTime";
+            this.radioButton4Q5.UseVisualStyleBackColor = false;
             // 
             // radioButton3Q5
             // 
@@ -380,6 +420,19 @@
             this.label13.Size = new System.Drawing.Size(187, 14);
             this.label13.TabIndex = 11;
             this.label13.Text = "(Choose only one correct answer)";
+            // 
+            // buttonCheck
+            // 
+            this.buttonCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCheck.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCheck.Location = new System.Drawing.Point(601, 1516);
+            this.buttonCheck.Name = "buttonCheck";
+            this.buttonCheck.Size = new System.Drawing.Size(75, 23);
+            this.buttonCheck.TabIndex = 32;
+            this.buttonCheck.Text = "Check";
+            this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
             // 
             // panel3
             // 
@@ -666,6 +719,19 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "(Choose only one correct answer)";
             // 
+            // buttonTryAgain
+            // 
+            this.buttonTryAgain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonTryAgain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTryAgain.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTryAgain.Location = new System.Drawing.Point(698, 1516);
+            this.buttonTryAgain.Name = "buttonTryAgain";
+            this.buttonTryAgain.Size = new System.Drawing.Size(75, 23);
+            this.buttonTryAgain.TabIndex = 31;
+            this.buttonTryAgain.Text = "Try again";
+            this.buttonTryAgain.UseVisualStyleBackColor = true;
+            this.buttonTryAgain.Click += new System.EventHandler(this.buttonTryAgain_Click);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -845,6 +911,7 @@
             this.TableOfContentsLink.TabIndex = 26;
             this.TableOfContentsLink.TabStop = true;
             this.TableOfContentsLink.Text = "Table of contents";
+            this.TableOfContentsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfContentsLink_LinkClicked);
             // 
             // NameOfQuizLabel
             // 
@@ -856,43 +923,15 @@
             this.NameOfQuizLabel.TabIndex = 25;
             this.NameOfQuizLabel.Text = "Overview";
             // 
-            // buttonCheck
-            // 
-            this.buttonCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCheck.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCheck.Location = new System.Drawing.Point(480, 15);
-            this.buttonCheck.Name = "buttonCheck";
-            this.buttonCheck.Size = new System.Drawing.Size(75, 23);
-            this.buttonCheck.TabIndex = 32;
-            this.buttonCheck.Text = "Check";
-            this.buttonCheck.UseVisualStyleBackColor = true;
-            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
-            // 
-            // buttonTryAgain
-            // 
-            this.buttonTryAgain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonTryAgain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonTryAgain.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTryAgain.Location = new System.Drawing.Point(577, 15);
-            this.buttonTryAgain.Name = "buttonTryAgain";
-            this.buttonTryAgain.Size = new System.Drawing.Size(75, 23);
-            this.buttonTryAgain.TabIndex = 31;
-            this.buttonTryAgain.Text = "Try again";
-            this.buttonTryAgain.UseVisualStyleBackColor = true;
-            this.buttonTryAgain.Click += new System.EventHandler(this.buttonTryAgain_Click);
-            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.Control;
             this.panel11.Controls.Add(this.button1);
             this.panel11.Controls.Add(this.linkLabel1);
-            this.panel11.Controls.Add(this.buttonCheck);
             this.panel11.Controls.Add(this.textBoxScore);
             this.panel11.Controls.Add(this.Score);
-            this.panel11.Controls.Add(this.buttonTryAgain);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 694);
+            this.panel11.Location = new System.Drawing.Point(0, 506);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(843, 47);
             this.panel11.TabIndex = 28;
@@ -926,6 +965,7 @@
             this.linkLabel1.TabIndex = 26;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Table of contents";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // textBoxScore
             // 
@@ -946,43 +986,17 @@
             this.Score.TabIndex = 0;
             this.Score.Text = "Score";
             // 
-            // radioButton4Q5
-            // 
-            this.radioButton4Q5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4Q5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton4Q5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4Q5.Location = new System.Drawing.Point(52, 285);
-            this.radioButton4Q5.Name = "radioButton4Q5";
-            this.radioButton4Q5.Padding = new System.Windows.Forms.Padding(10, 5, 0, 5);
-            this.radioButton4Q5.Size = new System.Drawing.Size(304, 33);
-            this.radioButton4Q5.TabIndex = 22;
-            this.radioButton4Q5.TabStop = true;
-            this.radioButton4Q5.Text = "ToDateTime";
-            this.radioButton4Q5.UseVisualStyleBackColor = false;
-            // 
-            // Q5label4Answer4
-            // 
-            this.Q5label4Answer4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Q5label4Answer4.AutoSize = true;
-            this.Q5label4Answer4.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Q5label4Answer4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Q5label4Answer4.Location = new System.Drawing.Point(383, 292);
-            this.Q5label4Answer4.Name = "Q5label4Answer4";
-            this.Q5label4Answer4.Size = new System.Drawing.Size(0, 19);
-            this.Q5label4Answer4.TabIndex = 23;
-            // 
             // QuizOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(843, 741);
+            this.ClientSize = new System.Drawing.Size(843, 553);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
             this.Name = "QuizOverview";
             this.Text = "Quiz: Overview";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1081,5 +1095,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Q5label4Answer4;
         private System.Windows.Forms.RadioButton radioButton4Q5;
+        private System.Windows.Forms.Label label3;
     }
 }

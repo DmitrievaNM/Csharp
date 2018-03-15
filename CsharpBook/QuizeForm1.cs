@@ -72,17 +72,17 @@ namespace CsharpBook
             //Cheking answer for Question3
             if (radioButton1Q3.Checked)
             {
-                Q2label1Answer1.Text = "Correct answer!";
+                Q3label1Answer1.Text = "Correct answer!";
                 //Counting right answers;
                 score++;
             }
 
             else
             {
-                if (radioButton2Q3.Checked) Q2label2Answer2.Text = "Wrong answer!";
+                if (radioButton2Q3.Checked) Q3label2Answer2.Text = "Wrong answer!";
                 else
                 {
-                    if (radioButton3Q3.Checked) Q2label3Answer3.Text = "Wrong answer!";
+                    if (radioButton3Q3.Checked) Q3label3Answer3.Text = "Wrong answer!";
                 }
             }
 
@@ -176,6 +176,26 @@ namespace CsharpBook
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TableOfContentsLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //Opening form with table of contents
+            Form form = new Contents();
+            form.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form form = new Contents();
+            form.Show();
+            this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
