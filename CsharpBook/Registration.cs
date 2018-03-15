@@ -294,42 +294,29 @@ namespace CsharpBook
         private void updatebttn_Click(object sender, EventArgs e)
         {
 
-            {
-                String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
-                SqlConnection con = new SqlConnection(dbString);
-                con.Open();
+            String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
+           
+            SqlConnection con = new SqlConnection(dbString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("UPDATE  Csharpusers SET [First name]=@a2, [Last name]=@a3, Gender=@a5, [Email Address]=@a6, Password=@a7, [Confirm Password]=@a8 WHERE Username=@a4", con);
 
-                SqlCommand cmd = new SqlCommand("Update Csharpusers Set First Name=@First Name, Last Name=@Last Name, Username=@Username, Gender=@Gender, Email Address=@Email Address, Password=@Password, Confirm Password=@Confirm Password", con);
+            cmd.Parameters.AddWithValue("a2", firstnametxtbx.Text);
+            cmd.Parameters.AddWithValue("a3", lastnametxtbx.Text);
+            cmd.Parameters.AddWithValue("a5", Gender);
+            cmd.Parameters.AddWithValue("a6", emailaddresstxtbx.Text);
+            cmd.Parameters.AddWithValue("a7", passstxtbx.Text);
+            cmd.Parameters.AddWithValue("a8", confirmpwtxtbx.Text);
+            cmd.Parameters.AddWithValue("a4", Usernametxtbx.Text);
+
+            if(cmd.ExecuteNonQuery()==1)
 
 
-                cmd.Parameters.AddWithValue("@Id", ID);
-                cmd.Parameters.AddWithValue("@Last name", lastnametxtbx.Text);
-                cmd.Parameters.AddWithValue("@Username", Usernametxtbx.Text);
-                cmd.Parameters.AddWithValue("@Gender", Gender);
-                cmd.Parameters.AddWithValue("@Email Address", emailaddresstxtbx.Text);
-                cmd.Parameters.AddWithValue("@Password", passstxtbx.Text);
-                cmd.Parameters.AddWithValue("@Confirm Password", confirmpwtxtbx.Text);
-
-
-                if (cmd.ExecuteNonQuery() == 1)
-
-                {
-                    label14.ForeColor = Color.Green;
-                    label14.Text = "Successfully Updated";
-
-                }
-
-                else
-                {
-                    label14.ForeColor = Color.Red;
-                    label14.Text = "Invalid username";
-                }
-                con.Close();
+               MessageBox.Show("User updated Successfully");
 
 
 
-            }
-        
+            con.Close();
+
 
         }
 
@@ -339,7 +326,9 @@ namespace CsharpBook
         }
     }
 
+    
 }
+
 
 
 

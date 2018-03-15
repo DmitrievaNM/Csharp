@@ -15,8 +15,7 @@ namespace CsharpBook
     public partial class Admin : Form
 
     {
-       String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
-        
+      
         public Admin()
 
         {
@@ -41,11 +40,18 @@ namespace CsharpBook
         private void Updatebtn_Click(object sender, EventArgs e)
         {
             
+
+
+
         }
 
         private void Deletebtn_Click(object sender, EventArgs e)
         {
 
+            
         }
+
+
+        
     }
 }

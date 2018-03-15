@@ -11,10 +11,14 @@ using System.Windows.Forms;
 namespace CsharpBook
 {
     public partial class TableOfQuizesForm : Form
+     
     {
+
         public TableOfQuizesForm()
         {
             InitializeComponent();
+             
+            
         }
 
         private void labelOverview_Click(object sender, EventArgs e)
@@ -27,7 +31,7 @@ namespace CsharpBook
 
         private void textBoxUserName_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void labelEnvironment_Click(object sender, EventArgs e)

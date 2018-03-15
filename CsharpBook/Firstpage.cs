@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CsharpBook
 {
     public partial class Firstpage : Form
     {
-        public Firstpage()
+        public Firstpage(string s)
         {
             InitializeComponent();
+            textBoxUserName.Text = s;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -86,7 +88,7 @@ namespace CsharpBook
 
         private void pictureBox1_Click_2(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -99,6 +101,11 @@ namespace CsharpBook
         {
             new Contents().Show();
             this.Hide();
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

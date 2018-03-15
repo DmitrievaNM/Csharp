@@ -172,9 +172,7 @@ namespace CsharpBook
         private void TableOfQuizesLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //Opening form with table of quizes
-            Form form = new TableOfQuizesForm();
-            form.Show();
-            this.Hide();
+            
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)

@@ -64,8 +64,6 @@
             this.genderlbl = new System.Windows.Forms.Label();
             this.lastnamelbl = new System.Windows.Forms.Label();
             this.firstnamelbl = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Idtxtbx = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -214,8 +212,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Idtxtbx);
-            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
@@ -340,7 +336,7 @@
             this.Maleradiobtn.TabIndex = 84;
             this.Maleradiobtn.Text = "Male";
             this.Maleradiobtn.UseVisualStyleBackColor = true;
-            
+            this.Maleradiobtn.CheckedChanged += new System.EventHandler(this.Maleradiobtn_CheckedChanged_1);
             // 
             // label8
             // 
@@ -463,22 +459,6 @@
             this.firstnamelbl.TabIndex = 72;
             this.firstnamelbl.Text = "First Name:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(274, 45);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(16, 13);
-            this.label15.TabIndex = 94;
-            this.label15.Text = "Id";
-            // 
-            // Idtxtbx
-            // 
-            this.Idtxtbx.Location = new System.Drawing.Point(321, 45);
-            this.Idtxtbx.Name = "Idtxtbx";
-            this.Idtxtbx.Size = new System.Drawing.Size(100, 20);
-            this.Idtxtbx.TabIndex = 95;
-            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,7 +533,5 @@
         private System.Windows.Forms.Label lastnamelbl;
         private System.Windows.Forms.Label firstnamelbl;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox Idtxtbx;
-        private System.Windows.Forms.Label label15;
     }
 }
