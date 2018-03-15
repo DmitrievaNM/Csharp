@@ -124,11 +124,12 @@ namespace CsharpBook
             DateTime currentDate = new DateTime();
 
             conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("INSERT INTO score (Name, Date, Score) VALUES (@Name, @Date, @Score) ", conn);
+            cmd = new SqlCommand("INSERT INTO score (Name, Date, Score, QuizName) VALUES (@Name, @Date, @Score, @QuizName) ", conn);
 
-            cmd.Parameters.AddWithValue("@Name", textBoxUserName.Text);
+            cmd.Parameters.AddWithValue("@Name", Program.username);
             cmd.Parameters.AddWithValue("@Date", currentDate);
             cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+            cmd.Parameters.AddWithValue("@QuizName", NameOfQuizLabel.Text);
 
             conn.Open();
             if (cmd.ExecuteNonQuery() == 1)
