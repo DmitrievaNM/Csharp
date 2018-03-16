@@ -64,6 +64,36 @@
     <Compile Include="Firstpage.Designer.cs">
       <DependentUpon>Firstpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="LectureBasicSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureBasicSyntax.Designer.cs">
+      <DependentUpon>LectureBasicSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectureDecisionMaking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureDecisionMaking.Designer.cs">
+      <DependentUpon>LectureDecisionMaking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectureEnvironment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureEnvironment.Designer.cs">
+      <DependentUpon>LectureEnvironment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectureOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureOverview.Designer.cs">
+      <DependentUpon>LectureOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectureProgramStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureProgramStructure.Designer.cs">
+      <DependentUpon>LectureProgramStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +152,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Firstpage.resx">
       <DependentUpon>Firstpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureBasicSyntax.resx">
+      <DependentUpon>LectureBasicSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureDecisionMaking.resx">
+      <DependentUpon>LectureDecisionMaking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureEnvironment.resx">
+      <DependentUpon>LectureEnvironment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureOverview.resx">
+      <DependentUpon>LectureOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureProgramStructure.resx">
+      <DependentUpon>LectureProgramStructure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
