@@ -16,5 +16,23 @@ namespace CsharpBook
         {
             InitializeComponent();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Table of contents
+            Form form = new Contents();
+            form.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Quiz Environment
+            Form form = new QuizEnvironment();
+            form.Show();
+            this.Hide();
+        }
     }
 }

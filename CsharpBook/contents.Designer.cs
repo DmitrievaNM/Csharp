@@ -79,6 +79,7 @@
             this.label13.Size = new System.Drawing.Size(123, 21);
             this.label13.TabIndex = 52;
             this.label13.Text = "5.Decision making";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label5
             // 
@@ -157,6 +158,7 @@
             this.label8.Size = new System.Drawing.Size(100, 21);
             this.label8.TabIndex = 44;
             this.label8.Text = "4.Basic Syntax";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label6
             // 
@@ -167,6 +169,7 @@
             this.label6.Size = new System.Drawing.Size(138, 21);
             this.label6.TabIndex = 43;
             this.label6.Text = "3.Program Structure";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // lbl5
             // 
@@ -187,6 +190,7 @@
             this.label4.Size = new System.Drawing.Size(103, 21);
             this.label4.TabIndex = 41;
             this.label4.Text = "2.Environment";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 

@@ -138,6 +138,7 @@
             this.button1.Size = new System.Drawing.Size(29, 24);
             this.button1.TabIndex = 27;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -955,6 +956,7 @@
             this.Return.Size = new System.Drawing.Size(29, 24);
             this.Return.TabIndex = 27;
             this.Return.UseVisualStyleBackColor = false;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
             // TableOfContentsLink
             // 

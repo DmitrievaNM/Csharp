@@ -40,6 +40,45 @@ namespace CsharpBook
 
             //This code is written by : Piumi
             //Opening Lecture Overview 
+            Form form = new LectureOverview();
+            form.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Lecture Environment
+            Form form = new LectureEnvironment();
+            form.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Lecture Program structure
+            Form form = new LectureProgramStructure();
+            form.Show();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Lecture Basic Syntax
+            Form form = new LectureBasicSyntax();
+            form.Show();
+            this.Hide();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Lecture Decision making
+            Form form = new LectureDecisionMaking();
+            form.Show();
+            this.Hide();
         }
     }
 }

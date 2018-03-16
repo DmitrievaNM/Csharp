@@ -898,6 +898,7 @@
             this.Return.TabIndex = 27;
             this.toolTipReturnToLecture.SetToolTip(this.Return, "Return to the lecture");
             this.Return.UseVisualStyleBackColor = false;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
             // TableOfContentsLink
             // 
@@ -952,6 +953,7 @@
             this.button1.TabIndex = 27;
             this.toolTipReturnToLecture.SetToolTip(this.button1, "Return to the lecture");
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 

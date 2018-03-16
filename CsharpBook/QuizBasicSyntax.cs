@@ -17,6 +17,8 @@ namespace CsharpBook
             InitializeComponent();
         }
 
+        //This code is written by : Natalia
+        //Method for finding all elements of one type
         public IEnumerable<Control> GetAll(Control control, Type type)
         {
             var controls = control.Controls.Cast<Control>();
@@ -25,6 +27,7 @@ namespace CsharpBook
 
         private void TableOfQuizesLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //This code is written by : Natalia
             //Opening form with table of quizes
             Form form = new TableOfQuizesForm();
             form.Show();
@@ -33,6 +36,7 @@ namespace CsharpBook
 
         private void TableOfContentsLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //This code is written by : Natalia
             //Opening form with table of contents
             Form form = new Contents();
             form.Show();
@@ -41,6 +45,7 @@ namespace CsharpBook
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //This code is written by : Natalia
             //Opening form with table of contents
             Form form = new Contents();
             form.Show();
@@ -49,6 +54,9 @@ namespace CsharpBook
 
         private void buttonCheck_Click(object sender, EventArgs e)
         {
+
+            //This code is written by : Natalia
+
             //Counter for quiz score
             int score = 0;
 
@@ -139,6 +147,7 @@ namespace CsharpBook
 
         private void buttonTryAgain_Click(object sender, EventArgs e)
         {
+            //This code is written by : Natalia
             //Clearing All radioButtons on the page
             var cntls = GetAll(this, typeof(RadioButton));
             var lblls = GetAll(this, typeof(Label));
@@ -163,6 +172,24 @@ namespace CsharpBook
 
             //Clear score
             textBoxScore.Text = "";
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Opening Lecture Basic Syntax
+            Form form = new LectureBasicSyntax();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Opening Lecture Basic Syntax
+            Form form = new LectureBasicSyntax();
+            form.Show();
+            this.Hide();
         }
     }
 }
