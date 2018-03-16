@@ -313,6 +313,16 @@ namespace CsharpBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap qz1 {
+            get {
+                object obj = ResourceManager.GetObject("qz1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sdsd {
             get {
                 object obj = ResourceManager.GetObject("sdsd", resourceCulture);
