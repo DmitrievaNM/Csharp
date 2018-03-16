@@ -18,5 +18,8 @@ namespace CsharpBook
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Firstpage());
         }
+
+        //Variable for saving user name
+        public static string username = null;
     }
 }

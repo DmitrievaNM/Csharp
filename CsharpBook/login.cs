@@ -67,7 +67,7 @@ namespace CsharpBook
 
             }
 
-            
+            Program.username = usernametxtbx.Text;
 
 
 

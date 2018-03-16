@@ -13,10 +13,10 @@ namespace CsharpBook
 {
     public partial class Firstpage : Form
     {
-        public Firstpage(string s)
+        public Firstpage()
         {
             InitializeComponent();
-            textBoxUserName.Text = s;
+           
         }
 
         private void label1_Click(object sender, EventArgs e)

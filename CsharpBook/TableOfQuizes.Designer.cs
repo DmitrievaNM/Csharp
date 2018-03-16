@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(689, 446);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxUserName);
@@ -174,6 +174,7 @@
             this.Controls.Add(this.TableOfContentsLink);
             this.Name = "TableOfQuizesForm";
             this.Text = "Table of Quizes";
+            this.Load += new System.EventHandler(this.TableOfQuizesForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

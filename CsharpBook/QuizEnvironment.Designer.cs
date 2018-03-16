@@ -34,6 +34,7 @@
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.Q5label4Answer4 = new System.Windows.Forms.Label();
             this.radioButton4Q5 = new System.Windows.Forms.RadioButton();
@@ -96,7 +97,6 @@
             this.Return = new System.Windows.Forms.Button();
             this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
             this.NameOfQuizLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -176,6 +176,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel8);
@@ -194,6 +195,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(843, 506);
             this.panel1.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(725, 1573);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 34;
             // 
             // panel10
             // 
@@ -972,14 +981,6 @@
             this.NameOfQuizLabel.TabIndex = 25;
             this.NameOfQuizLabel.Text = "Environment";
             this.NameOfQuizLabel.Click += new System.EventHandler(this.NameOfQuizLabel_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(725, 1573);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 34;
             // 
             // QuizEnvironment
             // 

@@ -68,5 +68,10 @@ namespace CsharpBook
             form.Show();
             this.Hide();
         }
+
+        private void TableOfQuizesForm_Load(object sender, EventArgs e)
+        {
+            textBoxUserName.Text = Program.username;
+        }
     }
 }
