@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CsharpBook
 {
@@ -135,6 +136,28 @@ namespace CsharpBook
 
             //Show user score
             textBoxScore.Text = "  " + score + "/5";
+
+            String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection con = new SqlConnection(dbString);
+
+
+
+            con.Open();
+
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO score (Name, Score, QuizName) VALUES (@Name, @Score, @QuizName) ", con);
+
+            cmd.Parameters.AddWithValue("@Name", Program.username);
+
+            cmd.Parameters.AddWithValue("@Score", score);
+            cmd.Parameters.AddWithValue("@QuizName", NameOfQuizLabel.Text);
+
+
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                labelAttempted.Text = "Attempted!";
+            }
+            con.Close();
         }
 
         private void buttonTryAgain_Click(object sender, EventArgs e)

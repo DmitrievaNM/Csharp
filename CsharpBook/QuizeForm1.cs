@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace CsharpBook
 {
     public partial class QuizOverview : Form
@@ -16,10 +16,10 @@ namespace CsharpBook
         {
             InitializeComponent();
         }
-
+        
         //private SqlConnection conn;
         //private SqlCommand cmd;
-        //string connstr = Properties.Settings.Default.MyConnection;
+
 
         //Get all elements of one type
         public IEnumerable<Control> GetAll(Control control, Type type)
@@ -120,25 +120,29 @@ namespace CsharpBook
 
             //Write douwn information about user, date and score of quiz to database
 
-            /*
-            DateTime currentDate = new DateTime();
+            String dbString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Cssharpdatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection con = new SqlConnection(dbString);
+            
 
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("INSERT INTO score (Name, Date, Score, QuizName) VALUES (@Name, @Date, @Score, @QuizName) ", conn);
+
+            con.Open();
+            
+            
+            SqlCommand cmd = new SqlCommand("INSERT INTO score (Name, Score, QuizName) VALUES (@Name, @Score, @QuizName) ", con);
 
             cmd.Parameters.AddWithValue("@Name", Program.username);
-            cmd.Parameters.AddWithValue("@Date", currentDate);
-            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+           
+            cmd.Parameters.AddWithValue("@Score", score);
             cmd.Parameters.AddWithValue("@QuizName", NameOfQuizLabel.Text);
 
-            conn.Open();
+           
             if (cmd.ExecuteNonQuery() == 1)
             {
                 labelAttempted.Text = "Attempted!";
             }
-            conn.Close();
+            con.Close();
 
-            */
+            
 
         }
 
