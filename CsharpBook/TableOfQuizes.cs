@@ -73,5 +73,40 @@ namespace CsharpBook
         {
             textBoxUserName.Text = Program.username;
         }
+
+        private void labelOverview_MouseEnter(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Changing font and color when mouse move
+            (sender as Control).Font = new Font("Calibri", 16F, FontStyle.Bold);
+            (sender as Control).ForeColor = System.Drawing.Color.FromArgb(9, 54, 93);
+            
+        }
+
+        private void labelOverview_MouseLeave(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Changing font and color when mouse move
+            (sender as Control).Font = new Font("Calibri", 15.5F, FontStyle.Regular);
+            (sender as Control).ForeColor = Color.Black;
+            
+
+        }
+
+        private void labelEnvironment_MouseEnter(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Changing font and color when mouse move
+            (sender as Control).Font = new Font("Calibri", 16F, FontStyle.Bold);
+            (sender as Control).ForeColor = System.Drawing.Color.FromArgb(9, 54, 93);
+        }
+
+        private void labelEnvironment_MouseLeave(object sender, EventArgs e)
+        {
+            //This code is written by : Natalia
+            //Changing font and color when mouse move
+            (sender as Control).Font = new Font("Calibri", 15.5F, FontStyle.Regular);
+            (sender as Control).ForeColor = Color.Black;
+        }
     }
 }

@@ -19,18 +19,33 @@ namespace CsharpBook
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //This code is written by : Piumi
-            //Opening Table of contents
-            Form form = new Contents();
-            form.Show();
-            this.Hide();
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
             //This code is written by : Piumi
             //Opening Quiz Basic Syntax
             Form form = new QuizBasicSyntax();
+            form.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Opening Table of contents
+            Form form = new Contents();
             form.Show();
             this.Hide();
         }

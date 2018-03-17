@@ -45,6 +45,8 @@ namespace CsharpBook
             this.Hide();
         }
 
+       
+
         private void label4_Click(object sender, EventArgs e)
         {
             //This code is written by : Piumi
@@ -79,6 +81,30 @@ namespace CsharpBook
             Form form = new LectureDecisionMaking();
             form.Show();
             this.Hide();
+        }
+
+        private void Contents_Load(object sender, EventArgs e)
+        {
+            //Add username to textbox 
+            textBoxUserName.Text = Program.username; 
+
+
+        }
+
+        private void label1_MouseEnter(object sender, EventArgs e)
+        {
+             // This code is written by : Piumi
+             //Changing font and color when mouse move
+             (sender as Control).Font = new Font("Calibri", 16F, FontStyle.Bold);
+            (sender as Control).ForeColor = System.Drawing.Color.FromArgb(9, 54, 93);
+        }
+
+        private void label1_MouseLeave(object sender, EventArgs e)
+        {
+            //This code is written by : Piumi
+            //Changing font and color when mouse move
+            (sender as Control).Font = new Font("Calibri", 15.5F, FontStyle.Regular);
+            (sender as Control).ForeColor = Color.Black;
         }
     }
 }

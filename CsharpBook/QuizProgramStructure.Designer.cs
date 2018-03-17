@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBoxScore = new System.Windows.Forms.TextBox();
             this.Score = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.NameOfQuizLabel = new System.Windows.Forms.Label();
+            this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
+            this.Return = new System.Windows.Forms.Button();
+            this.TableOfQuizesLink = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.Q5label4Answer4 = new System.Windows.Forms.Label();
@@ -98,12 +105,11 @@
             this.Q1label1Answer1 = new System.Windows.Forms.Label();
             this.Q1label3Answer3 = new System.Windows.Forms.Label();
             this.typeOfQuestion = new System.Windows.Forms.Label();
-            this.TableOfQuizesLink = new System.Windows.Forms.LinkLabel();
-            this.Return = new System.Windows.Forms.Button();
-            this.TableOfContentsLink = new System.Windows.Forms.LinkLabel();
-            this.NameOfQuizLabel = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -119,14 +125,15 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.Control;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel11.Controls.Add(this.button1);
             this.panel11.Controls.Add(this.linkLabel1);
             this.panel11.Controls.Add(this.textBoxScore);
             this.panel11.Controls.Add(this.Score);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 506);
+            this.panel11.Location = new System.Drawing.Point(0, 601);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(843, 47);
+            this.panel11.Size = new System.Drawing.Size(843, 51);
             this.panel11.TabIndex = 29;
             // 
             // button1
@@ -138,10 +145,11 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(678, 14);
+            this.button1.Location = new System.Drawing.Point(674, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(29, 24);
             this.button1.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.button1, "Return to the lecture");
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -152,7 +160,7 @@
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(724, 17);
+            this.linkLabel1.Location = new System.Drawing.Point(720, 17);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(110, 18);
             this.linkLabel1.TabIndex = 26;
@@ -182,7 +190,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel8);
@@ -192,15 +201,94 @@
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.buttonTryAgain);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.TableOfQuizesLink);
-            this.panel1.Controls.Add(this.Return);
-            this.panel1.Controls.Add(this.TableOfContentsLink);
-            this.panel1.Controls.Add(this.NameOfQuizLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(843, 506);
+            this.panel1.Size = new System.Drawing.Size(843, 601);
             this.panel1.TabIndex = 30;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(93)))));
+            this.panel13.Controls.Add(this.pictureBox1);
+            this.panel13.Controls.Add(this.NameOfQuizLabel);
+            this.panel13.Controls.Add(this.TableOfContentsLink);
+            this.panel13.Controls.Add(this.Return);
+            this.panel13.Controls.Add(this.TableOfQuizesLink);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(826, 71);
+            this.panel13.TabIndex = 46;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox1.BackgroundImage = global::CsharpBook.Properties.Resources.lolyf;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 71);
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
+            // NameOfQuizLabel
+            // 
+            this.NameOfQuizLabel.AutoSize = true;
+            this.NameOfQuizLabel.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameOfQuizLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NameOfQuizLabel.Location = new System.Drawing.Point(102, 21);
+            this.NameOfQuizLabel.Name = "NameOfQuizLabel";
+            this.NameOfQuizLabel.Size = new System.Drawing.Size(219, 33);
+            this.NameOfQuizLabel.TabIndex = 25;
+            this.NameOfQuizLabel.Text = "Program structure";
+            // 
+            // TableOfContentsLink
+            // 
+            this.TableOfContentsLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableOfContentsLink.AutoSize = true;
+            this.TableOfContentsLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TableOfContentsLink.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TableOfContentsLink.LinkColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TableOfContentsLink.Location = new System.Drawing.Point(696, 33);
+            this.TableOfContentsLink.Name = "TableOfContentsLink";
+            this.TableOfContentsLink.Size = new System.Drawing.Size(110, 18);
+            this.TableOfContentsLink.TabIndex = 26;
+            this.TableOfContentsLink.TabStop = true;
+            this.TableOfContentsLink.Text = "Table of contents";
+            this.TableOfContentsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfContentsLink_LinkClicked);
+            // 
+            // Return
+            // 
+            this.Return.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Return.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Return.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
+            this.Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Return.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Return.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.Return.FlatAppearance.BorderSize = 0;
+            this.Return.Location = new System.Drawing.Point(519, 30);
+            this.Return.Name = "Return";
+            this.Return.Size = new System.Drawing.Size(29, 24);
+            this.Return.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.Return, "Return to the lecture");
+            this.Return.UseVisualStyleBackColor = false;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
+            // 
+            // TableOfQuizesLink
+            // 
+            this.TableOfQuizesLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableOfQuizesLink.AutoSize = true;
+            this.TableOfQuizesLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TableOfQuizesLink.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TableOfQuizesLink.LinkColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TableOfQuizesLink.Location = new System.Drawing.Point(577, 33);
+            this.TableOfQuizesLink.Name = "TableOfQuizesLink";
+            this.TableOfQuizesLink.Size = new System.Drawing.Size(95, 18);
+            this.TableOfQuizesLink.TabIndex = 28;
+            this.TableOfQuizesLink.TabStop = true;
+            this.TableOfQuizesLink.Text = "Table of quizes";
+            this.TableOfQuizesLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfQuizesLink_LinkClicked);
             // 
             // label3
             // 
@@ -981,76 +1069,24 @@
             this.typeOfQuestion.TabIndex = 11;
             this.typeOfQuestion.Text = "(Choose only one correct answer)";
             // 
-            // TableOfQuizesLink
-            // 
-            this.TableOfQuizesLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TableOfQuizesLink.AutoSize = true;
-            this.TableOfQuizesLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TableOfQuizesLink.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TableOfQuizesLink.LinkColor = System.Drawing.Color.Black;
-            this.TableOfQuizesLink.Location = new System.Drawing.Point(531, 24);
-            this.TableOfQuizesLink.Name = "TableOfQuizesLink";
-            this.TableOfQuizesLink.Size = new System.Drawing.Size(95, 18);
-            this.TableOfQuizesLink.TabIndex = 28;
-            this.TableOfQuizesLink.TabStop = true;
-            this.TableOfQuizesLink.Text = "Table of quizes";
-            this.TableOfQuizesLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfQuizesLink_LinkClicked);
-            // 
-            // Return
-            // 
-            this.Return.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Return.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Return.BackgroundImage = global::CsharpBook.Properties.Resources._11539_200;
-            this.Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Return.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Return.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.Return.FlatAppearance.BorderSize = 0;
-            this.Return.Location = new System.Drawing.Point(473, 21);
-            this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(29, 24);
-            this.Return.TabIndex = 27;
-            this.Return.UseVisualStyleBackColor = false;
-            this.Return.Click += new System.EventHandler(this.Return_Click);
-            // 
-            // TableOfContentsLink
-            // 
-            this.TableOfContentsLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TableOfContentsLink.AutoSize = true;
-            this.TableOfContentsLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TableOfContentsLink.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TableOfContentsLink.LinkColor = System.Drawing.Color.Black;
-            this.TableOfContentsLink.Location = new System.Drawing.Point(650, 24);
-            this.TableOfContentsLink.Name = "TableOfContentsLink";
-            this.TableOfContentsLink.Size = new System.Drawing.Size(110, 18);
-            this.TableOfContentsLink.TabIndex = 26;
-            this.TableOfContentsLink.TabStop = true;
-            this.TableOfContentsLink.Text = "Table of contents";
-            this.TableOfContentsLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TableOfContentsLink_LinkClicked);
-            // 
-            // NameOfQuizLabel
-            // 
-            this.NameOfQuizLabel.AutoSize = true;
-            this.NameOfQuizLabel.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameOfQuizLabel.Location = new System.Drawing.Point(32, 42);
-            this.NameOfQuizLabel.Name = "NameOfQuizLabel";
-            this.NameOfQuizLabel.Size = new System.Drawing.Size(219, 33);
-            this.NameOfQuizLabel.TabIndex = 25;
-            this.NameOfQuizLabel.Text = "Program structure";
-            // 
             // QuizProgramStructure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(843, 553);
+            this.ClientSize = new System.Drawing.Size(843, 652);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel11);
             this.Name = "QuizProgramStructure";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quiz: Program structure";
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -1150,5 +1186,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

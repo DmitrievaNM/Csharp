@@ -24,6 +24,16 @@ namespace CsharpBook
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
             //This code is written by : Piumi
             //Opening Table of contents
             Form form = new Contents();
@@ -31,7 +41,7 @@ namespace CsharpBook
             this.Hide();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             //This code is written by : Piumi
             //Opening Quiz Program Structure
